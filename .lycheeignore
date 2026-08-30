@@ -1,0 +1,2 @@
+# Add one narrowly scoped regular expression per known false positive.
+# Explain why the target cannot be checked automatically and review exclusions periodically.
