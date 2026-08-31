@@ -19,6 +19,13 @@ Real directives use monotonically increasing IDs: `DIR-001`, `DIR-002`, and so o
 
 An assistant must not infer `APPROVED` or `ACTIVE`. Those states require verified approval and effective-date information.
 
+## Current records
+
+The following directives are drafts. They are under review and impose no requirements:
+
+* [DIR-001: Code generation for customer deliverables](DIR-001-code-generation-customer-deliverables.md)
+* [DIR-002: Program-level AI code-generation use-case approval](DIR-002-program-level-ai-use-case-approval.md)
+
 When a directive is retired, add `Retired By`, `Retirement Date`, and a short `Retirement Rationale`. Use `TBD` for any unknown fact rather than inventing lifecycle history.
 
 ## Supersession

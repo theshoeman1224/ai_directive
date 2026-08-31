@@ -8,7 +8,7 @@ Owner: TBD
 
 ## Currently active
 
-The documentation structure and public-repository safeguards are in place for initial review. [PLAN.md](PLAN.md) now contains a draft AI code-generation adoption strategy. It is not approved and creates no active instruction.
+The documentation structure and public-repository safeguards are in place for review. [PLAN.md](PLAN.md) and two related directives describe a draft AI code-generation adoption strategy. They are not approved and create no active instruction.
 
 ## Approved
 
@@ -19,27 +19,35 @@ No plans, decisions, directives, or communications are recorded as approved.
 * Human review of the repository structure, templates, and sanitization rules.
 * Assignment of ownership and approval authority.
 * Review of the draft AI code-generation assumptions in [PLAN.md](PLAN.md).
-* Definition of the proposed cross-team use-case review process and evidence criteria.
+* Review of [DIR-001](directives/DIR-001-code-generation-customer-deliverables.md) and [DIR-002](directives/DIR-002-program-level-ai-use-case-approval.md).
+* Definition of the proposed cross-team use-case review authority and correctness criteria.
 
 ## Blocked
 
-* Plan approval is blocked until the owner, approver, review authority, and evidence criteria are known.
-* Directive creation is blocked until an approved instruction is identified.
+* Plan approval is blocked until the owner, approver, review authority, and correctness criteria are known.
+* Directive activation is blocked until ownership, approval metadata, effective dates, the approval registers, and unresolved source-tagging rules are known.
 
 ## Needs attention
 
-* Confirm that the repository will be created publicly with `main` as its primary branch.
-* Review the initial diff for information inappropriate for public release.
+* Review the draft plan and directives for information inappropriate for public release.
 * Replace `TBD` fields only with verified information.
 
 ## Next major actions
 
 1. Complete public-release and governance review.
 2. Assign the plan owner and approval authority.
-3. Resolve the open questions in the draft AI adoption strategy.
-4. Record an explicit decision if the strategy is approved.
-5. Create a directive only when an approved operational instruction and its required metadata are known.
+3. Assign the use-case review authority and define minimum correctness evidence.
+4. Resolve the source-tagging and approval-register questions.
+5. Record an explicit decision if the strategy is approved.
+6. Add approval and effective-date metadata only after the required approvals occur.
 
 ## Active directives
 
-None. [The directive example](directives/EXAMPLE-directive.md) is not active and imposes no requirements.
+None.
+
+The following drafts are under review and impose no requirements:
+
+* [DIR-001: Code generation for customer deliverables](directives/DIR-001-code-generation-customer-deliverables.md)
+* [DIR-002: Program-level AI code-generation use-case approval](directives/DIR-002-program-level-ai-use-case-approval.md)
+
+[The directive example](directives/EXAMPLE-directive.md) is also not active and imposes no requirements.
