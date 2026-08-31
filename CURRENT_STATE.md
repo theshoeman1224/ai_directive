@@ -8,7 +8,7 @@ Owner: TBD
 
 ## Currently active
 
-The documentation structure and public-repository safeguards are in place for initial review. Program-specific planning has not yet been added.
+The documentation structure and public-repository safeguards are in place for initial review. [PLAN.md](PLAN.md) now contains a draft AI code-generation adoption strategy. It is not approved and creates no active instruction.
 
 ## Approved
 
@@ -18,11 +18,12 @@ No plans, decisions, directives, or communications are recorded as approved.
 
 * Human review of the repository structure, templates, and sanitization rules.
 * Assignment of ownership and approval authority.
-* Preparation of sanitized program content for [PLAN.md](PLAN.md).
+* Review of the draft AI code-generation assumptions in [PLAN.md](PLAN.md).
+* Definition of the proposed cross-team use-case review process and evidence criteria.
 
 ## Blocked
 
-* Plan approval is blocked until the owner, approver, and program-specific direction are known.
+* Plan approval is blocked until the owner, approver, review authority, and evidence criteria are known.
 * Directive creation is blocked until an approved instruction is identified.
 
 ## Needs attention
@@ -35,8 +36,9 @@ No plans, decisions, directives, or communications are recorded as approved.
 
 1. Complete public-release and governance review.
 2. Assign the plan owner and approval authority.
-3. Add sanitized program objectives, priorities, dependencies, and risks.
-4. Create the first real decision or directive only when the underlying event occurs.
+3. Resolve the open questions in the draft AI adoption strategy.
+4. Record an explicit decision if the strategy is approved.
+5. Create a directive only when an approved operational instruction and its required metadata are known.
 
 ## Active directives
 
