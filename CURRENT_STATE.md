@@ -2,7 +2,7 @@
 
 Status: DRAFT
 
-Snapshot Date: 2026-08-30
+Snapshot Date: 2026-09-02
 
 Owner: TBD
 
@@ -20,11 +20,11 @@ No plans, decisions, directives, or communications are recorded as approved.
 * Assignment of ownership and approval authority.
 * Review of the draft AI code-generation assumptions in [PLAN.md](PLAN.md).
 * Review of [DIR-001](directives/DIR-001-ai-model-data-and-usage-policy.md), [DIR-002](directives/DIR-002-code-generation-customer-deliverables.md), and [DIR-003](directives/DIR-003-program-level-ai-use-case-approval.md).
-* Definition of the proposed cross-team use-case review authority and correctness criteria.
+* Definition of sub-IPT sponsorship responsibilities, the proposed cross-team use-case review authority, and correctness criteria.
 
 ## Blocked
 
-* Plan approval is blocked until the owner, approver, review authority, and correctness criteria are known.
+* Plan approval is blocked until the owner, approver, sub-IPT sponsorship responsibilities, review authority, and correctness criteria are known.
 * Directive activation is blocked until ownership, approval metadata, effective dates, the approval registers, and unresolved source-tagging rules are known.
 
 ## Needs attention
@@ -36,10 +36,11 @@ No plans, decisions, directives, or communications are recorded as approved.
 
 1. Complete public-release and governance review.
 2. Assign the plan owner and approval authority.
-3. Assign the use-case review authority and define minimum correctness evidence.
-4. Resolve the source-tagging and approval-register questions.
-5. Record an explicit decision if the strategy is approved.
-6. Add approval and effective-date metadata only after the required approvals occur.
+3. Confirm sub-IPT sponsorship responsibilities and assign the use-case review authority.
+4. Define minimum correctness evidence.
+5. Resolve the source-tagging and approval-register questions.
+6. Record an explicit decision if the strategy is approved.
+7. Add approval and effective-date metadata only after the required approvals occur.
 
 ## Active directives
 

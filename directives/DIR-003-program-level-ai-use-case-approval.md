@@ -22,7 +22,7 @@ Related Decisions: None
 
 ## Purpose
 
-Define how teams demonstrate and seek program approval for code-generation use cases. Tool approval and use-case approval are separate. An approved use case may run with any program-approved AI tool.
+Define how teams demonstrate and seek program approval for code-generation use cases, including team-level sponsorship and program-level review. Tool approval and use-case approval are separate. An approved use case may run with any program-approved AI tool.
 
 Proposed use cases must be simple, bounded, and demonstrated.
 
@@ -50,29 +50,42 @@ Each proposed use case must include:
 
 3. Use-case boundaries and required context
 
-   Identify the in-scope task, excluded uses, required context, examples, coding standards, and other constraints.
+   Identify the in-scope task and expected output, excluded uses, required context, examples, and approval-critical boundaries.
 
 4. Proof of concept
 
    Provide representative sandbox examples and their expected results. Include failures as well as successful results so reviewers can assess correctness.
 
+## Sub-IPT lead sponsorship
+
+Before IPT-level SME review, the sub-IPT lead responsible for the affected product or codebase must endorse the submission.
+
+Sponsorship confirms that the sub-IPT lead:
+
+* is aware of the proposed use case and workflow,
+* considers the use case appropriate for the team's product and codebase,
+* accepts that the team remains responsible for implementation, testing, and normal code review, and
+* has identified any product-specific limits that belong in the approval boundary.
+
+Sponsorship permits the submission to proceed to IPT-level review. It does not grant program approval.
+
 ## SME approval
 
-A small SME board will review each submission and confirm:
+A small IPT-level SME board will review each sponsored submission and confirm:
 
 * The use case is sufficiently simple and narrow.
-* The expected output is clearly defined.
-* The sandbox evidence demonstrates that the workflow produces correct results.
-* The boundaries of acceptable use are clear.
-* Applicable engineering, safety, or contractual concerns have been considered.
+* The proposed task and AI-generated output are clearly bounded.
+* The prompt or workflow is repeatable.
+* The sandbox evidence is sufficient to evaluate the proposed use.
+* The applicable AI-tool and data-use restrictions are satisfied.
 
-The proposing team remains responsible for the technical details of its own codebase and workflow.
+The SME board is not responsible for detailed design, coding standards, or product-specific correctness. Those responsibilities remain with the proposing team and its sub-IPT lead through the normal engineering process.
 
 ## Scope of approval
 
 Approval applies only to the submitted use case and workflow.
 
-Material expansion of the use case requires reapproval. Minor prompt refinements that do not change the approved scope do not require a new approval.
+Material expansion of the use case requires renewed sub-IPT sponsorship and program reapproval. Minor prompt refinements that do not change the approved scope do not require a new approval.
 
 Changing between program-approved AI tools does not require reapproval.
 
@@ -84,6 +97,9 @@ Each entry must include:
 
 * Team
 * Submitter
+* Sponsoring sub-IPT lead
+* Sponsorship decision
+* Sponsorship date
 * Use case
 * Purpose
 * Approved prompt or workflow
@@ -101,7 +117,7 @@ None currently exist.
 
 ## Verification and compliance
 
-A team may merge generated source code into a customer-deliverable branch or deliver it to a customer only when the authoritative register shows that the use case is approved and the work remains within the recorded boundaries.
+A team may merge generated source code into a customer-deliverable branch or deliver it to a customer only when the authoritative register records the required sub-IPT sponsorship, shows that the use case is approved, and confirms that the work remains within the recorded boundaries.
 
 ## Related directives
 

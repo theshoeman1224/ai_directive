@@ -40,13 +40,13 @@ Related Directive: [DIR-003: Program-level AI code-generation use-case approval]
 
 ### In scope
 
-<!-- List the specific tasks this approval would permit. -->
+<!-- List the specific tasks and AI-generated output this approval would permit. -->
 
 * `<in_scope_task>`
 
 ### Out of scope
 
-<!-- List similar or higher-risk tasks that remain prohibited. -->
+<!-- List similar, higher-risk, or otherwise restricted tasks that remain outside the approval boundary. -->
 
 * `<excluded_task>`
 
@@ -55,18 +55,6 @@ Related Directive: [DIR-003: Program-level AI code-generation use-case approval]
 <!-- Identify the input types, examples, files, or other context the workflow requires. Describe sensitive inputs generically in this public template. -->
 
 * `<required_context>`
-
-### Expected output
-
-<!-- Describe the expected output and how it will be used. -->
-
-`<expected_output>`
-
-### Standards and constraints
-
-<!-- List applicable coding standards, formatting rules, safety limits, review requirements, and other constraints. -->
-
-* `<constraint>`
 
 ## 4. Proof of concept
 
@@ -90,17 +78,23 @@ Related Directive: [DIR-003: Program-level AI code-generation use-case approval]
 
 * `<known_failure_or_limitation>`
 
-### Correctness conclusion
-
-<!-- Summarize whether the evidence supports approval within the proposed boundaries. -->
-
-`<correctness_conclusion>`
-
 ## Requested approval
 
 <!-- State the exact use case and workflow boundaries the team is asking the SME board to approve. -->
 
 `<requested_approval_scope>`
+
+## Sub-IPT lead sponsorship
+
+<!-- Completed by the sub-IPT lead responsible for the affected product or codebase. Sponsorship confirms that the proposed use is appropriate for the team and may proceed to IPT-level review. It does not grant program approval. -->
+
+Sponsoring Sub-IPT Lead: `<sub_ipt_lead>`
+
+Sponsorship Decision: `<endorsed_or_not_endorsed>`
+
+Sponsorship Date: `<sponsorship_date>`
+
+Conditions or Comments: `<conditions_or_comments>`
 
 ## SME review
 
