@@ -1,4 +1,4 @@
-# DIR-001: Code generation for customer deliverables
+# DIR-002: Code generation for customer deliverables
 
 Status: DRAFT
 
@@ -26,7 +26,7 @@ Define the proposed conditions under which AI-generated source code may be merge
 
 ## Directive
 
-Teams may evaluate code-generation use cases in a sandbox with any program-approved AI tool and interaction method. Before generated source code enters a customer-deliverable branch or is delivered to a customer, the program must approve the use case under [DIR-002](DIR-002-program-level-ai-use-case-approval.md).
+Teams may evaluate code-generation use cases in a sandbox with any program-approved AI tool and interaction method. Before generated source code enters a customer-deliverable branch or is delivered to a customer, the program must approve the use case under [DIR-003](DIR-003-program-level-ai-use-case-approval.md).
 
 Approval of a use case permits the team to run that use case with any program-approved AI tool. Changing between approved tools does not require another use-case approval when the use case and workflow boundaries remain unchanged.
 
@@ -39,7 +39,7 @@ This directive applies to AI-generated source code intended for release or deliv
 * Use only program-approved AI tools.
 * Confirm that the applicable contract permits AI-generated source code in customer deliverables.
 * Keep sandbox output out of customer-deliverable branches and customer deliveries until the use case is approved.
-* Obtain program-level approval for each code-generation use case under [DIR-002](DIR-002-program-level-ai-use-case-approval.md).
+* Obtain program-level approval for each code-generation use case under [DIR-003](DIR-003-program-level-ai-use-case-approval.md).
 * Follow the normal code-review process for customer-deliverable software.
 * Apply the same engineering, testing, verification, qualification, and release requirements used for human-authored code.
 * Have human reviewers determine whether generated code is correct and acceptable for delivery. Passing automated tests alone is not sufficient.
@@ -90,7 +90,7 @@ The following items must be resolved before this directive can become active:
 
 ## Related directives
 
-* [DIR-002: Program-level AI code-generation use-case approval](DIR-002-program-level-ai-use-case-approval.md)
+* [DIR-003: Program-level AI code-generation use-case approval](DIR-003-program-level-ai-use-case-approval.md)
 
 ## Related communications
 

@@ -1,4 +1,4 @@
-# DIR-002: Program-level AI code-generation use-case approval
+# DIR-003: Program-level AI code-generation use-case approval
 
 Status: DRAFT
 
@@ -103,7 +103,7 @@ A team may merge generated source code into a customer-deliverable branch or del
 
 ## Related directives
 
-* [DIR-001: Code generation for customer deliverables](DIR-001-code-generation-customer-deliverables.md)
+* [DIR-002: Code generation for customer deliverables](DIR-002-code-generation-customer-deliverables.md)
 
 ## Related communications
 

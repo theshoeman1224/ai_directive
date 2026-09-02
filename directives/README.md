@@ -23,8 +23,9 @@ An assistant must not infer `APPROVED` or `ACTIVE`. Those states require verifie
 
 The following directives are drafts. They are under review and impose no requirements:
 
-* [DIR-001: Code generation for customer deliverables](DIR-001-code-generation-customer-deliverables.md)
-* [DIR-002: Program-level AI code-generation use-case approval](DIR-002-program-level-ai-use-case-approval.md)
+* [DIR-001: AI tool data and output usage](DIR-001-ai-model-data-and-usage-policy.md)
+* [DIR-002: Code generation for customer deliverables](DIR-002-code-generation-customer-deliverables.md)
+* [DIR-003: Program-level AI code-generation use-case approval](DIR-003-program-level-ai-use-case-approval.md)
 
 When a directive is retired, add `Retired By`, `Retirement Date`, and a short `Retirement Rationale`. Use `TBD` for any unknown fact rather than inventing lifecycle history.
 

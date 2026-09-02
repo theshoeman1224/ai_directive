@@ -103,5 +103,6 @@ None.
 
 ## Related directives
 
-* [DIR-001: Code generation for customer deliverables](directives/DIR-001-code-generation-customer-deliverables.md)
-* [DIR-002: Program-level AI code-generation use-case approval](directives/DIR-002-program-level-ai-use-case-approval.md)
+* [DIR-001: AI tool data and output usage](directives/DIR-001-ai-model-data-and-usage-policy.md)
+* [DIR-002: Code generation for customer deliverables](directives/DIR-002-code-generation-customer-deliverables.md)
+* [DIR-003: Program-level AI code-generation use-case approval](directives/DIR-003-program-level-ai-use-case-approval.md)

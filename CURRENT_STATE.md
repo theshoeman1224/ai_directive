@@ -8,7 +8,7 @@ Owner: TBD
 
 ## Currently active
 
-The documentation structure and public-repository safeguards are in place for review. [PLAN.md](PLAN.md) and two related directives describe a draft AI code-generation adoption strategy. They are not approved and create no active instruction.
+The documentation structure and public-repository safeguards are in place for review. [PLAN.md](PLAN.md) and three related directives describe a draft AI code-generation adoption strategy. They are not approved and create no active instruction.
 
 ## Approved
 
@@ -19,7 +19,7 @@ No plans, decisions, directives, or communications are recorded as approved.
 * Human review of the repository structure, templates, and sanitization rules.
 * Assignment of ownership and approval authority.
 * Review of the draft AI code-generation assumptions in [PLAN.md](PLAN.md).
-* Review of [DIR-001](directives/DIR-001-code-generation-customer-deliverables.md) and [DIR-002](directives/DIR-002-program-level-ai-use-case-approval.md).
+* Review of [DIR-001](directives/DIR-001-ai-model-data-and-usage-policy.md), [DIR-002](directives/DIR-002-code-generation-customer-deliverables.md), and [DIR-003](directives/DIR-003-program-level-ai-use-case-approval.md).
 * Definition of the proposed cross-team use-case review authority and correctness criteria.
 
 ## Blocked
@@ -47,7 +47,8 @@ None.
 
 The following drafts are under review and impose no requirements:
 
-* [DIR-001: Code generation for customer deliverables](directives/DIR-001-code-generation-customer-deliverables.md)
-* [DIR-002: Program-level AI code-generation use-case approval](directives/DIR-002-program-level-ai-use-case-approval.md)
+* [DIR-001: AI tool data and output usage](directives/DIR-001-ai-model-data-and-usage-policy.md)
+* [DIR-002: Code generation for customer deliverables](directives/DIR-002-code-generation-customer-deliverables.md)
+* [DIR-003: Program-level AI code-generation use-case approval](directives/DIR-003-program-level-ai-use-case-approval.md)
 
 [The directive example](directives/EXAMPLE-directive.md) is also not active and imposes no requirements.

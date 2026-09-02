@@ -1,4 +1,4 @@
-# DIR-003: AI tool data and output usage
+# DIR-001: AI tool data and output usage
 
 Status: DRAFT
 
@@ -44,7 +44,7 @@ Output may be incorporated into deliverable products when all other applicable p
 
 * Poolside
 
-Use of AI-generated source code remains subject to the code-generation requirements defined by DIR-001 and DIR-002.
+Use of AI-generated source code remains subject to the code-generation requirements defined by DIR-002 and DIR-003.
 
 ### Level 2 — Internal-use only
 
@@ -120,8 +120,8 @@ Compliance requires that:
 
 ## Related directives
 
-* [DIR-001: Code generation for customer deliverables](DIR-001-code-generation-customer-deliverables.md)
-* DIR-002: Program-level AI code-generation use-case approval
+* [DIR-002: Code generation for customer deliverables](DIR-002-code-generation-customer-deliverables.md)
+* [DIR-003: Program-level AI code-generation use-case approval](DIR-003-program-level-ai-use-case-approval.md)
 
 ## Related communications
 
