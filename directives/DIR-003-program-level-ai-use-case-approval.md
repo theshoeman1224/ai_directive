@@ -36,6 +36,8 @@ The sandbox demonstration may use any approved tool. After approval, the team ma
 
 ## Team submission
 
+Use the [AI use-case submission template](../templates/ai-use-case-submission.md) to prepare each submission.
+
 Each proposed use case must include:
 
 1. Why the task is simple enough
