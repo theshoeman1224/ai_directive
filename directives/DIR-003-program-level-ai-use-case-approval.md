@@ -30,9 +30,9 @@ A suitable use case should be comparable to a task that could be given to a juni
 
 ## Sandbox evaluation
 
-Teams may use any program-approved AI tool and interaction method to develop and test a proposed use case in a sandbox. Sandbox output must not merge into a customer-deliverable branch or be delivered to a customer before the use case is approved.
+Teams may use any AI tool and interaction method whose data-use level permits the sandbox activity to develop and test a proposed use case in a sandbox. Sandbox output must not merge into a customer-deliverable branch or be delivered to a customer before the use case is approved.
 
-The sandbox demonstration may use any approved tool. After approval, the team may run the use case with any approved tool without repeating use-case approval, provided the use case and workflow boundaries do not change.
+The sandbox demonstration may use any tool whose data-use level permits the sandbox activity. After approval, the team may run the use case with any approved tool without repeating use-case approval, provided the use case and workflow boundaries do not change.
 
 ## Team submission
 

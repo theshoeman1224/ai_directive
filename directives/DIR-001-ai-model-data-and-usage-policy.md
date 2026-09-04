@@ -26,7 +26,7 @@ Define which AI tools may receive program intellectual property (IP), how their 
 
 ## Data-use levels
 
-Program-approved AI tools are assigned one of three data-use levels.
+AI tools are assigned one of three data-use levels. Level 1 and Level 2 tools are program-approved. A tool that is not separately approved as Level 1 or Level 2 is treated as Level 3 by default and is not a program-approved tool.
 
 | Level | Program IP as Input | Output in Deliverable Products |
 |---|---|---|
@@ -58,6 +58,8 @@ AI-generated output must not be incorporated into deliverable products.
 
 ### Level 3 — Non-IP use only
 
+Level 3 is the default classification for tools that are not program-approved.
+
 Program IP must not be provided to the AI tool.
 
 AI-generated output must not be incorporated into deliverable products.
@@ -82,11 +84,11 @@ These examples are non-exhaustive and do not authorize an activity by themselves
 
 ## Tool selection
 
-Users should use the most capable approved AI tool whose data-use level supports the task.
+Users should use the most capable available AI tool whose data-use level supports the task.
 
 The broad permissions of a Level 1 tool do not make it the preferred tool for every task.
 
-When a task does not require program IP and its output will not enter a deliverable product, users should prefer capable frontier AI models such as ChatGPT or Claude over Poolside when those services are approved for use.
+When a task does not require program IP and its output will not enter a deliverable product, users should prefer capable frontier AI models such as ChatGPT or Claude over Poolside.
 
 When program IP is required but the AI output will not enter a deliverable product, a Level 2 tool should generally be preferred when it provides better capability than the available Level 1 tool.
 
@@ -97,7 +99,7 @@ Level 1 tools should primarily be used when the task requires permissions unavai
 
 ## Restrictions
 
-Tool approval does not override other program, contractual, security, export-control, data-handling, or engineering requirements.
+Neither tool approval nor default Level 3 treatment overrides other program, contractual, security, export-control, data-handling, or engineering requirements.
 
 Users must:
 
@@ -114,7 +116,7 @@ None currently exist.
 
 Compliance requires that:
 
-* the AI tool is approved for the data provided to it,
+* the tool's data-use level permits the data provided to it,
 * the intended use of the output is permitted by the tool's assigned level, and
 * any additional program-level approval required for the activity has been obtained.
 

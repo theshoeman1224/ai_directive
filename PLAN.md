@@ -8,7 +8,7 @@ Approved By: TBD
 
 Approval Date: TBD
 
-Last Updated: 2026-09-02
+Last Updated: 2026-09-04
 
 ## Objective
 
@@ -25,31 +25,31 @@ This plan does not authorize customer-deliverable use by itself. Active directiv
 ## Current priorities
 
 * Define a lightweight process for teams to propose bounded code-generation use cases.
-* Require the responsible sub-IPT lead to sponsor each proposal before a small cross-team subject-matter expert and point-of-contact group reviews it.
+* Require the responsible sub-IPT lead to sponsor each proposal before a small IPT-level SME board reviews it.
 * Define the correctness evidence needed to approve a use case.
 * Set a clear boundary between sandbox evaluation and customer-deliverable use.
 
 ## Requirements
 
-* Use only program-approved AI tools.
+* Use only program-approved AI tools for source code intended for a customer-deliverable branch or customer delivery.
 * Approve bounded use cases, not general permission to generate code.
-* Allow teams to develop and test proposed use cases in a sandbox with any program-approved AI tool and interaction method.
+* Allow teams to develop and test proposed use cases in a sandbox with any AI tool and interaction method whose data-use level permits the sandbox activity.
 * Do not merge sandbox output into a customer-deliverable branch or deliver it to a customer before the use case is approved.
 * Allow an approved use case to run with any program-approved AI tool without another use-case approval.
 * Require correctness evidence for each proposed use case.
 * Require sponsorship from the sub-IPT lead responsible for the affected product or codebase before program-level review.
 * Keep the proposing team and sub-IPT lead responsible for product-specific technical suitability, implementation, testing, and normal code review.
-* Keep the cross-team review focused on whether the proposed use is simple, bounded, demonstrated, and compliant.
+* Keep the IPT-level SME review focused on whether the proposed use is simple, bounded, demonstrated, and compliant.
 
 ## Operating model
 
 The following statements are planning assumptions. They are not active instructions while this plan remains in `DRAFT`:
 
-1. Teams identify and sandbox proposed code-generation use cases with program-approved AI tools.
+1. Teams identify and sandbox proposed code-generation use cases with AI tools whose data-use level permits the sandbox activity.
 2. Teams keep sandbox output out of customer-deliverable branches and customer deliveries until the use case is approved.
 3. Teams submit the proposed use case, its boundaries, its repeatable workflow, and correctness evidence.
 4. The responsible sub-IPT lead sponsors the proposal and confirms that it is appropriate for the team's product and codebase.
-5. A small cross-team subject-matter expert and point-of-contact group reviews the sponsored proposal for simplicity, boundaries, evidence, and acceptable AI use.
+5. A small IPT-level SME board reviews the sponsored proposal for simplicity, boundaries, evidence, and acceptable AI use.
 6. Approval applies only to the reviewed use case and its stated boundaries. The team may run that approved use case with any program-approved AI tool.
 7. Human engineers and the sub-IPT retain responsibility for detailed design, implementation, testing, and normal code review.
 
@@ -71,7 +71,7 @@ Review approved use cases when their scope changes and retire approvals that no 
 
 * Review and approval of this adoption strategy.
 * Assignment of plan ownership and approval authority.
-* Definition of sub-IPT sponsorship responsibilities, the cross-team review group, the submission process, and correctness criteria.
+* Definition of sub-IPT sponsorship responsibilities, the IPT-level SME board, the submission process, and correctness criteria.
 * Definition of the authoritative approval register and reapproval triggers.
 
 ## Risks
@@ -86,7 +86,7 @@ Review approved use cases when their scope changes and retire approvals that no 
 ## Dependencies
 
 * Named plan owner and approval authority: TBD.
-* Sub-IPT sponsorship roles and the membership and authority of the cross-team review group: TBD.
+* Sub-IPT sponsorship roles and the membership and authority of the IPT-level SME board: TBD.
 * A documented path for proposing, reviewing, approving, and revisiting bounded use cases: TBD.
 * Verification methods appropriate to each use case and repository.
 * An authoritative register for approved AI tools and use cases: TBD.
@@ -94,7 +94,7 @@ Review approved use cases when their scope changes and retire approvals that no 
 ## Open questions
 
 * Who owns this plan?
-* Who selects the cross-team reviewers, and what approval authority do they hold?
+* Who selects the IPT-level SME board members, and what approval authority do they hold?
 * What minimum correctness evidence is required before a use case can be approved?
 * What changes to a use case require a new review?
 * Where will approved tools and use cases be recorded?
