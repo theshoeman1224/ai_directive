@@ -22,7 +22,7 @@ Related Decisions: None
 
 ## Purpose
 
-Define how teams demonstrate and seek program approval for code-generation use cases, including team-level sponsorship and program-level review. Tool approval and use-case approval are separate. An approved use case may run with any program-approved AI tool.
+Define how teams demonstrate and seek program approval for code-generation use cases, including team-level sponsorship and program-level review. Tool approval and use-case approval are separate. An approved use case may run with any company-approved AI tool.
 
 Proposed use cases must be simple, bounded, and demonstrated.
 
@@ -87,7 +87,7 @@ Approval applies only to the submitted use case and workflow.
 
 Material expansion of the use case requires renewed sub-IPT sponsorship and program reapproval. Minor prompt refinements that do not change the approved scope do not require a new approval.
 
-Changing between program-approved AI tools does not require reapproval.
+Changing between company-approved AI tools does not require reapproval.
 
 ## Approval record
 

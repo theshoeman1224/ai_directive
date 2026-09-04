@@ -12,13 +12,13 @@ Last Updated: 2026-09-04
 
 ## Objective
 
-Authorize teams to use program-approved AI tools for bounded code-generation use cases while keeping human engineers accountable for source code merged into customer-deliverable branches or delivered to customers.
+Authorize teams to use company-approved AI tools for bounded code-generation use cases while keeping human engineers accountable for source code merged into customer-deliverable branches or delivered to customers.
 
 ## Scope
 
 This plan covers the proposed adoption model for AI-assisted code generation, including sandbox evaluation, use-case approval, correctness evidence, and human responsibility for delivered source code.
 
-Teams already have access to AI tools. This plan governs when source code generated with a program-approved AI tool may enter a customer-deliverable branch or be delivered to a customer. It does not govern account provisioning or how a team interacts with an approved tool.
+Teams already have access to AI tools. This plan governs when source code generated with a company-approved AI tool may enter a customer-deliverable branch or be delivered to a customer. It does not govern account provisioning or how a team interacts with an approved tool.
 
 This plan does not authorize customer-deliverable use by itself. Active directives remain the source of truth for operational instructions.
 
@@ -31,11 +31,11 @@ This plan does not authorize customer-deliverable use by itself. Active directiv
 
 ## Requirements
 
-* Use only program-approved AI tools for source code intended for a customer-deliverable branch or customer delivery.
+* Use only company-approved AI tools for source code intended for a customer-deliverable branch or customer delivery.
 * Approve bounded use cases, not general permission to generate code.
 * Allow teams to develop and test proposed use cases in a sandbox with any AI tool and interaction method whose data-use level permits the sandbox activity.
 * Do not merge sandbox output into a customer-deliverable branch or deliver it to a customer before the use case is approved.
-* Allow an approved use case to run with any program-approved AI tool without another use-case approval.
+* Allow an approved use case to run with any company-approved AI tool without another use-case approval.
 * Require correctness evidence for each proposed use case.
 * Require sponsorship from the sub-IPT lead responsible for the affected product or codebase before program-level review.
 * Keep the proposing team and sub-IPT lead responsible for product-specific technical suitability, implementation, testing, and normal code review.
@@ -50,7 +50,7 @@ The following statements are planning assumptions. They are not active instructi
 3. Teams submit the proposed use case, its boundaries, its repeatable workflow, and correctness evidence.
 4. The responsible sub-IPT lead sponsors the proposal and confirms that it is appropriate for the team's product and codebase.
 5. A small IPT-level SME board reviews the sponsored proposal for simplicity, boundaries, evidence, and acceptable AI use.
-6. Approval applies only to the reviewed use case and its stated boundaries. The team may run that approved use case with any program-approved AI tool.
+6. Approval applies only to the reviewed use case and its stated boundaries. The team may run that approved use case with any company-approved AI tool.
 7. Human engineers and the sub-IPT retain responsibility for detailed design, implementation, testing, and normal code review.
 
 ## Implementation plan

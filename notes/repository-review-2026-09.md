@@ -47,6 +47,9 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 | 25 | PLAN internal duplication | Minor style | TBD | Open |
 | 26 | Rules restated across five files | Minor style | TBD | Open |
 | 27 | No LICENSE file | Worth deciding deliberately | TBD | Open |
+| 28 | "Program approved" renamed to "company approved" | PR review feedback | Fix | Done |
+| 29 | Tool selection prescriptive wording | PR review feedback | Fix | Done |
+| 30 | Unclear restrictions sentence | PR review feedback | Fix | Done |
 
 ## Consistency conflicts
 
@@ -273,3 +276,28 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 * Reason: Absence means "all rights reserved" by default. That may be intentional for governance content, but it should be a choice, not an omission.
 * Disposition: TBD
 * Status: Open
+
+## PR review feedback
+
+Feedback items 28 through 30 came from review comments on pull request 1.
+
+### 28. "Program approved" renamed to "company approved"
+
+* Where: [DIR-001](../directives/DIR-001-ai-model-data-and-usage-policy.md):29 and matching language in DIR-002, DIR-003, and PLAN.md
+* Finding: Review comment: "instead of program approved, company approved would be more accurate".
+* Disposition: Fix. All "program-approved" references now read "company-approved". Related terms such as "program IP" and "program-level" were left unchanged pending a separate decision.
+* Status: Done
+
+### 29. Tool selection prescriptive wording
+
+* Where: [DIR-001](../directives/DIR-001-ai-model-data-and-usage-policy.md):85-98
+* Finding: Review comment: "instead of 'should', something like 'users may use' would be more accurate. at the end of the day, a user can use whatever they prefer using".
+* Disposition: Fix. Tool selection now uses permissive "may" wording throughout the section: users may use whichever tool they prefer, provided the tool's data-use level supports the task.
+* Status: Done
+
+### 30. Unclear restrictions sentence
+
+* Where: [DIR-001](../directives/DIR-001-ai-model-data-and-usage-policy.md):100-101
+* Finding: Review comment: "I am not sure what this means", referring to the sentence about tool approval and default Level 3 treatment.
+* Disposition: Fix. Rewritten as two plain sentences: approval of a tool, or its treatment as Level 3 by default, does not exempt users from other requirements, and program, contractual, security, export-control, data-handling, and engineering requirements all still apply.
+* Status: Done

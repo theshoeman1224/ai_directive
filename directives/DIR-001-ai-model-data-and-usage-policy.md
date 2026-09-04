@@ -22,11 +22,11 @@ Related Decisions: None
 
 ## Purpose
 
-Define which AI tools may receive program intellectual property (IP), how their outputs may be used, and how users should select an AI tool for a task.
+Define which AI tools may receive program intellectual property (IP), how their outputs may be used, and how to select an AI tool for a task.
 
 ## Data-use levels
 
-AI tools are assigned one of three data-use levels. Level 1 and Level 2 tools are program-approved. A tool that is not separately approved as Level 1 or Level 2 is treated as Level 3 by default and is not a program-approved tool.
+AI tools are assigned one of three data-use levels. Level 1 and Level 2 tools are company-approved. A tool that is not separately approved as Level 1 or Level 2 is treated as Level 3 by default and is not a company-approved tool.
 
 | Level | Program IP as Input | Output in Deliverable Products |
 |---|---|---|
@@ -58,7 +58,7 @@ AI-generated output must not be incorporated into deliverable products.
 
 ### Level 3 — Non-IP use only
 
-Level 3 is the default classification for tools that are not program-approved.
+Level 3 is the default classification for tools that are not company-approved.
 
 Program IP must not be provided to the AI tool.
 
@@ -84,22 +84,22 @@ These examples are non-exhaustive and do not authorize an activity by themselves
 
 ## Tool selection
 
-Users should use the most capable available AI tool whose data-use level supports the task.
+Users may use whichever AI tool they prefer, provided the tool's data-use level supports the task.
 
 The broad permissions of a Level 1 tool do not make it the preferred tool for every task.
 
-When a task does not require program IP and its output will not enter a deliverable product, users should prefer capable frontier AI models such as ChatGPT or Claude over Poolside.
+When a task does not require program IP and its output will not enter a deliverable product, users may prefer capable frontier AI models such as ChatGPT or Claude over Poolside.
 
-When program IP is required but the AI output will not enter a deliverable product, a Level 2 tool should generally be preferred when it provides better capability than the available Level 1 tool.
+When program IP is required but the AI output will not enter a deliverable product, users may prefer a Level 2 tool when it provides better capability than the available Level 1 tool.
 
-Level 1 tools should primarily be used when the task requires permissions unavailable at the other levels, particularly when:
+A Level 1 tool is needed when the task requires permissions unavailable at the other levels, particularly when:
 
 * program IP must be provided and no suitable Level 2 tool exists, or
 * AI-generated output is intended for a deliverable product.
 
 ## Restrictions
 
-Neither tool approval nor default Level 3 treatment overrides other program, contractual, security, export-control, data-handling, or engineering requirements.
+Approval of a tool, or its treatment as Level 3 by default, does not exempt users from other requirements. Program, contractual, security, export-control, data-handling, and engineering requirements all still apply.
 
 Users must:
 
