@@ -2,7 +2,7 @@
 
 This public repository is the durable record for planning and governance work. It holds intended direction, decision rationale, approved instructions, final significant communications, and non-authoritative working notes. Git history and pull requests preserve how that record changed.
 
-This repository contains documentation only. Application code, dashboards, databases, APIs, messaging integrations, workflow engines, and scheduled automation do not belong here. The only initial automation checks links in Markdown files.
+This repository contains documentation only. Application code, dashboards, databases, APIs, messaging integrations, workflow engines, and scheduled automation do not belong here. The only automation currently checks links in Markdown files.
 
 ## Public repository warning
 

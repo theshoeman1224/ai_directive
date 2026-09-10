@@ -32,7 +32,7 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 | 10 | Submission template status lifecycle undefined | Needs clarification | Fix | Done |
 | 11 | Junior-developer heuristic has no anchored example | Needs clarification | Fix | Done |
 | 12 | Two formulas for the approval standard | Needs clarification | Fix | Done |
-| 13 | README automation phrasing | Needs clarification | TBD | Open |
+| 13 | README automation phrasing | Needs clarification | Fix | Done |
 | 14 | "Work around" security phrasing | Needs clarification | TBD | Open |
 | 15 | Communication lifecycle between approval and merge | Needs clarification | TBD | Open |
 | 16 | "Program IP" coverage of credentials undefined | Needs clarification | TBD | Open |
@@ -157,8 +157,8 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 * Where: [README.md](../README.md):5
 * Finding: "The only initial automation checks links in Markdown files" reads awkwardly.
 * Reason: "Only initial automation" is not a phrase a person writes. "The only automation currently checks links in Markdown files" says the same thing.
-* Disposition: TBD
-* Status: Open
+* Disposition: Fix. Applied the rewording in README.md:5.
+* Status: Done
 
 ### 14. "Work around" security phrasing
 
