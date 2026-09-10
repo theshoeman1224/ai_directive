@@ -24,7 +24,7 @@ Related Decisions: None
 
 Define how teams demonstrate and seek program approval for code-generation use cases, including team-level sponsorship and program-level review. Tool approval and use-case approval are separate.
 
-Proposed use cases must be simple, bounded, and demonstrated.
+Proposed use cases must be simple, bounded, demonstrated, and compliant with applicable restrictions.
 
 A suitable use case should be comparable to a task that could be given to a junior developer on their first day and completed correctly by the end of the day without additional design guidance.
 

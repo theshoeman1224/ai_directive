@@ -31,7 +31,7 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 | 9 | CURRENT_STATE status field undefined | Needs clarification | Fix | Done |
 | 10 | Submission template status lifecycle undefined | Needs clarification | Fix | Done |
 | 11 | Junior-developer heuristic has no anchored example | Needs clarification | Fix | Done |
-| 12 | Two formulas for the approval standard | Needs clarification | TBD | Open |
+| 12 | Two formulas for the approval standard | Needs clarification | Fix | Done |
 | 13 | README automation phrasing | Needs clarification | TBD | Open |
 | 14 | "Work around" security phrasing | Needs clarification | TBD | Open |
 | 15 | Communication lifecycle between approval and merge | Needs clarification | TBD | Open |
@@ -149,8 +149,8 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 * Where: [PLAN.md](../PLAN.md):42; [DIR-003](../directives/DIR-003-program-level-ai-use-case-approval.md):27
 * Finding: PLAN.md says "simple, bounded, demonstrated, and compliant"; DIR-003 says "simple, bounded, and demonstrated".
 * Reason: Matching formulas act as a checksum in governance writing. A mismatch invites the question of which one is the real standard.
-* Disposition: TBD
-* Status: Open
+* Disposition: Fix. Standardized on the four-part formula in both files: "simple, bounded, demonstrated, and compliant". DIR-003:27 now reads "simple, bounded, demonstrated, and compliant with applicable restrictions".
+* Status: Done
 
 ### 13. README automation phrasing
 
