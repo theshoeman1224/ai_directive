@@ -30,7 +30,7 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 | 8 | Contract confirmation has no owner | Needs clarification | Ignored | Done |
 | 9 | CURRENT_STATE status field undefined | Needs clarification | Fix | Done |
 | 10 | Submission template status lifecycle undefined | Needs clarification | Fix | Done |
-| 11 | Junior-developer heuristic has no anchored example | Needs clarification | TBD | Open |
+| 11 | Junior-developer heuristic has no anchored example | Needs clarification | Fix | Done |
 | 12 | Two formulas for the approval standard | Needs clarification | TBD | Open |
 | 13 | README automation phrasing | Needs clarification | TBD | Open |
 | 14 | "Work around" security phrasing | Needs clarification | TBD | Open |
@@ -141,8 +141,8 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 * Where: [DIR-003](../directives/DIR-003-program-level-ai-use-case-approval.md):29; [PLAN.md](../PLAN.md):84
 * Finding: The first-day-junior-developer standard is subjective, and the plan already lists inconsistent reviewer application as a risk without any mitigation.
 * Reason: The heuristic is memorable, which is good, but without an anchored example of an approved use case, each SME board will draw its own line. One worked example in the template would do more than another paragraph of criteria.
-* Disposition: TBD
-* Status: Open
+* Disposition: Fix. Added anchor examples to section 1 of the AI use-case submission template: documentation comments, small test scaffolds, and diagnostic-output code from a fixed template are likely simple enough; cross-module design work or anything a first-day developer could not verify by end of day is likely too complex.
+* Status: Done
 
 ### 12. Two formulas for the approval standard
 

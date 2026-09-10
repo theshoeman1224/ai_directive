@@ -27,7 +27,9 @@ Related Directive: [DIR-003: Program-level AI code-generation use-case approval]
 
 ## 1. Why the task is simple enough
 
-<!-- Explain why the task is low-complexity, bounded, and does not require significant design judgment. Address the first-day junior developer and end-of-day completion standard in DIR-003. -->
+<!-- Explain why the task is low-complexity, bounded, and does not require significant design judgment. Address the first-day junior developer and end-of-day completion standard in DIR-003.
+     Anchors: writing a documentation comment, adding a small test scaffold, or generating simple diagnostic-output code from a fixed template are likely simple enough.
+     Designing new logic whose correctness depends on cross-module behavior, or anything a first-day developer could not verify by end of day, is likely too complex. -->
 
 `<simplicity_justification>`
 
