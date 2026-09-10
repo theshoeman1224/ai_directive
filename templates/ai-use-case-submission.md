@@ -6,6 +6,9 @@
 
 Submission Status: DRAFT
 
+<!-- Submission Status lifecycle: DRAFT (being prepared), SUBMITTED (sent for sub-IPT lead sponsorship),
+     ENDORSED (sponsored and awaiting SME review), APPROVED or NOT APPROVED (SME decision recorded), WITHDRAWN. -->
+
 Team: `<team_name>`
 
 Submitter: `<submitter_role>`

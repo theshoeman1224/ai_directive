@@ -29,7 +29,7 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 | 7 | Safety-critical code scope gap | Needs clarification | Fix | Done |
 | 8 | Contract confirmation has no owner | Needs clarification | Ignored | Done |
 | 9 | CURRENT_STATE status field undefined | Needs clarification | Fix | Done |
-| 10 | Submission template status lifecycle undefined | Needs clarification | TBD | Open |
+| 10 | Submission template status lifecycle undefined | Needs clarification | Fix | Done |
 | 11 | Junior-developer heuristic has no anchored example | Needs clarification | TBD | Open |
 | 12 | Two formulas for the approval standard | Needs clarification | TBD | Open |
 | 13 | README automation phrasing | Needs clarification | TBD | Open |
@@ -133,8 +133,8 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 * Where: [AI use-case submission template](../templates/ai-use-case-submission.md):7
 * Finding: `Submission Status: DRAFT` exists with no defined set of statuses or transitions.
 * Reason: Teams will invent their own values if the lifecycle is undefined.
-* Disposition: TBD
-* Status: Open
+* Disposition: Fix. Documented the status set in the template: DRAFT, SUBMITTED, ENDORSED, APPROVED, NOT APPROVED, WITHDRAWN, mirroring the DIR-003 flow of submission, sponsorship, and SME review.
+* Status: Done
 
 ### 11. Junior-developer heuristic has no anchored example
 
