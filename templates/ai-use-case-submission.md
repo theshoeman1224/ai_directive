@@ -2,7 +2,7 @@
 
 > TEMPLATE: This blank form does not record or grant approval.
 
-> This repository is public. Do not enter program IP or other restricted information here. Complete and store submissions in `<internal_approval_register>`.
+> This repository is public. Do not enter company IP or other restricted information here. Complete and store submissions in `<internal_approval_register>`.
 
 Submission Status: DRAFT
 

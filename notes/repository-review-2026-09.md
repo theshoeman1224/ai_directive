@@ -50,6 +50,7 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 | 28 | "Program approved" renamed to "company approved" | PR review feedback | Fix | Done |
 | 29 | Tool selection prescriptive wording | PR review feedback | Fix | Done |
 | 30 | Unclear restrictions sentence | PR review feedback | Fix | Done |
+| 31 | Vocabulary: IP term and remaining "program" uses | PR review feedback | Fix | Done |
 
 ## Consistency conflicts
 
@@ -285,7 +286,7 @@ Feedback items 28 through 30 came from review comments on pull request 1.
 
 * Where: [DIR-001](../directives/DIR-001-ai-model-data-and-usage-policy.md):29 and matching language in DIR-002, DIR-003, and PLAN.md
 * Finding: Review comment: "instead of program approved, company approved would be more accurate".
-* Disposition: Fix. All "program-approved" references now read "company-approved". Related terms such as "program IP" and "program-level" were left unchanged pending a separate decision.
+* Disposition: Fix. All "program-approved" references now read "company-approved". Related vocabulary was resolved in item 31: "program IP" became "company IP"; "program-level" and "the program" deliberately remain.
 * Status: Done
 
 ### 29. Tool selection prescriptive wording
@@ -300,4 +301,11 @@ Feedback items 28 through 30 came from review comments on pull request 1.
 * Where: [DIR-001](../directives/DIR-001-ai-model-data-and-usage-policy.md):100-101
 * Finding: Review comment: "I am not sure what this means", referring to the sentence about tool approval and default Level 3 treatment.
 * Disposition: Fix. Rewritten as two plain sentences: approval of a tool, or its treatment as Level 3 by default, does not exempt users from other requirements, and program, contractual, security, export-control, data-handling, and engineering requirements all still apply.
+* Status: Done
+
+### 31. Vocabulary: IP term and remaining "program" uses
+
+* Where: [DIR-001](../directives/DIR-001-ai-model-data-and-usage-policy.md); [AI use-case submission template](../templates/ai-use-case-submission.md):5
+* Finding: Follow-up to the review comment behind item 28: the remaining "program" vocabulary needed a decision per context.
+* Disposition: Fix. "Program IP" and "program intellectual property" renamed to "Company IP" and "company intellectual property", including the DIR-001 table header. Approval-scope wording ("program-level approval", "program approval", "program review", "program reapproval"), "the program" as actor or owner, "program requirements", and the document titles ("# Program plan"; DIR-003's title and filename) deliberately keep "program".
 * Status: Done
