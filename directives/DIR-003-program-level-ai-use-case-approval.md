@@ -22,17 +22,17 @@ Related Decisions: None
 
 ## Purpose
 
-Define how teams demonstrate and seek program approval for code-generation use cases, including team-level sponsorship and program-level review. Tool approval and use-case approval are separate. An approved use case may run with any program-approved AI tool.
+Define how teams demonstrate and seek program approval for code-generation use cases, including team-level sponsorship and program-level review. Tool approval and use-case approval are separate.
 
-Proposed use cases must be simple, bounded, and demonstrated.
+Proposed use cases must be simple, bounded, demonstrated, and compliant with applicable restrictions.
 
 A suitable use case should be comparable to a task that could be given to a junior developer on their first day and completed correctly by the end of the day without additional design guidance.
 
 ## Sandbox evaluation
 
-Teams may use any program-approved AI tool and interaction method to develop and test a proposed use case in a sandbox. Sandbox output must not merge into a customer-deliverable branch or be delivered to a customer before the use case is approved.
+Teams may use any AI tool and interaction method whose data-use level permits the sandbox activity to develop and test a proposed use case in a sandbox. Sandbox output must not merge into a customer-deliverable branch or be delivered to a customer before the use case is approved.
 
-The sandbox demonstration may use any approved tool. After approval, the team may run the use case with any approved tool without repeating use-case approval, provided the use case and workflow boundaries do not change.
+The sandbox demonstration may use any tool whose data-use level permits the sandbox activity. After approval, permission to run the use case with different tools and the conditions requiring reapproval are governed by the Scope of approval section.
 
 ## Team submission
 
@@ -58,7 +58,7 @@ Each proposed use case must include:
 
 ## Sub-IPT lead sponsorship
 
-Before IPT-level SME review, the sub-IPT lead responsible for the affected product or codebase must endorse the submission.
+Before Integrated Product Team (IPT)-level Subject Matter Expert (SME) review, the sub-Integrated Product Team (sub-IPT) lead responsible for the affected product or codebase must endorse the submission.
 
 Sponsorship confirms that the sub-IPT lead:
 
@@ -87,7 +87,7 @@ Approval applies only to the submitted use case and workflow.
 
 Material expansion of the use case requires renewed sub-IPT sponsorship and program reapproval. Minor prompt refinements that do not change the approved scope do not require a new approval.
 
-Changing between program-approved AI tools does not require reapproval.
+Changing between company-approved AI tools does not require reapproval, provided the use case and workflow boundaries do not change.
 
 ## Approval record
 

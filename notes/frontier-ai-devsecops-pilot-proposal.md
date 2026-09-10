@@ -24,13 +24,13 @@ This does not mean the current tool has no value. Its demonstrated strengths sho
 
 Existing policy permits frontier AI models to support certain non-deliverable activities when applicable input and output restrictions are followed. DevSecOps work represents a strong opportunity for this type of use.
 
-Teams frequently need to establish or modify CI workflows, evaluate available tools, develop internal automation, and work around version or installation constraints imposed by secured environments. These tasks often require research, troubleshooting, and reasoning across multiple possible approaches.
+Teams frequently need to establish or modify CI workflows, evaluate available tools, develop internal automation, and operate within version or installation constraints imposed by secured environments. These tasks often require research, troubleshooting, and reasoning across multiple possible approaches.
 
 Approved frontier models such as ChatGPT or Claude may help engineers identify compatible solutions, evaluate alternatives, and develop workable approaches within the tools available to them.
 
 ## Proposed pilot
 
-The IPT should sponsor a limited, time-bounded pilot that provides selected engineers with access to their preferred approved frontier AI model for DevSecOps-related activities.
+The Integrated Product Team (IPT) should sponsor a limited, time-bounded pilot that provides selected engineers with access to their preferred approved frontier AI model for DevSecOps-related activities.
 
 Participants should:
 

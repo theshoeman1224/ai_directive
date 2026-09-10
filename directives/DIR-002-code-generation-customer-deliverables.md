@@ -26,9 +26,9 @@ Define the proposed conditions under which AI-generated source code may be merge
 
 ## Directive
 
-Teams may evaluate code-generation use cases in a sandbox with any program-approved AI tool and interaction method. Before generated source code enters a customer-deliverable branch or is delivered to a customer, the program must approve the use case under [DIR-003](DIR-003-program-level-ai-use-case-approval.md).
+Teams may evaluate code-generation use cases in a sandbox with any AI tool and interaction method whose data-use level permits the sandbox activity. Before generated source code enters a customer-deliverable branch or is delivered to a customer, the program must approve the use case under [DIR-003](DIR-003-program-level-ai-use-case-approval.md).
 
-Approval of a use case permits the team to run that use case with any program-approved AI tool. Changing between approved tools does not require another use-case approval when the use case and workflow boundaries remain unchanged.
+The scope of an approved use case, including permission to run it with different company-approved AI tools and the conditions requiring reapproval, is defined by [DIR-003](DIR-003-program-level-ai-use-case-approval.md).
 
 ## Scope
 
@@ -36,7 +36,7 @@ This directive applies to AI-generated source code intended for release or deliv
 
 ## Required actions
 
-* Use only program-approved AI tools.
+* Use only company-approved AI tools for source code intended for a customer-deliverable branch or customer delivery.
 * Confirm that the applicable contract permits AI-generated source code in customer deliverables.
 * Keep sandbox output out of customer-deliverable branches and customer deliveries until the use case is approved.
 * Obtain program-level approval for each code-generation use case under [DIR-003](DIR-003-program-level-ai-use-case-approval.md).
@@ -67,6 +67,12 @@ Proposed requirements:
 * Repository-level `AGENTS.md` instructions must direct approved AI tools to apply the `-AI` suffix to every line of source code they generate.
 * Human code reviewers must verify that AI-generated lines are correctly tagged before accepting the change.
 
+## Safety-critical code
+
+AI-generated source code intended for safety-critical applications remains subject to all previously applicable safety standards and to each team's predefined safety-critical review requirements, including any additional review effort those requirements impose.
+
+This directive and the use-case approval under [DIR-003](DIR-003-program-level-ai-use-case-approval.md) are in addition to those requirements, not a replacement for them.
+
 ## Exceptions
 
 None currently exist.
@@ -85,7 +91,6 @@ Compliance requires evidence that:
 The following items must be resolved before this directive can become active:
 
 * Rules for modifying previously AI-generated lines.
-* Safety-critical code approval criteria.
 * The authoritative approved-tool and approved-use-case registers.
 
 ## Related directives

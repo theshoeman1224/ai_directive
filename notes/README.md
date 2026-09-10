@@ -8,6 +8,7 @@ Notes follow the same public-release rules as every other file. Remove private d
 
 Use [the meeting-notes template](../templates/meeting-notes.md) when it fits. Mark unresolved statements and owners as `TBD`; do not infer agreement or approval from discussion notes.
 
-## Current working proposals
+## Current working documents
 
 * [Frontier AI pilot for DevSecOps activities](frontier-ai-devsecops-pilot-proposal.md) — Non-authoritative proposal for evaluating approved frontier AI models in DevSecOps work.
+* [Repository review findings](repository-review-2026-09.md) — Working list of full-repository review findings and their dispositions.

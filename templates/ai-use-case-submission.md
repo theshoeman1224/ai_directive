@@ -2,9 +2,12 @@
 
 > TEMPLATE: This blank form does not record or grant approval.
 
-> This repository is public. Do not enter program IP or other restricted information here. Complete and store submissions in `<internal_approval_register>`.
+> This repository is public. Do not enter company IP or other restricted information here. Complete and store submissions in `<internal_approval_register>`.
 
 Submission Status: DRAFT
+
+<!-- Submission Status lifecycle: DRAFT (being prepared), SUBMITTED (sent for sub-IPT lead sponsorship),
+     ENDORSED (sponsored and awaiting SME review), APPROVED or NOT APPROVED (SME decision recorded), WITHDRAWN. -->
 
 Team: `<team_name>`
 
@@ -24,7 +27,9 @@ Related Directive: [DIR-003: Program-level AI code-generation use-case approval]
 
 ## 1. Why the task is simple enough
 
-<!-- Explain why the task is low-complexity, bounded, and does not require significant design judgment. Address the first-day junior developer and end-of-day completion standard in DIR-003. -->
+<!-- Explain why the task is low-complexity, bounded, and does not require significant design judgment. Address the first-day junior developer and end-of-day completion standard in DIR-003.
+     Anchors: writing a documentation comment, adding a small test scaffold, or generating simple diagnostic-output code from a fixed template are likely simple enough.
+     Designing new logic whose correctness depends on cross-module behavior, or anything a first-day developer could not verify by end of day, is likely too complex. -->
 
 `<simplicity_justification>`
 
@@ -80,13 +85,13 @@ Related Directive: [DIR-003: Program-level AI code-generation use-case approval]
 
 ## Requested approval
 
-<!-- State the exact use case and workflow boundaries the team is asking the SME board to approve. -->
+<!-- State the exact use case and workflow boundaries the team is asking the Subject Matter Expert (SME) board to approve. -->
 
 `<requested_approval_scope>`
 
 ## Sub-IPT lead sponsorship
 
-<!-- Completed by the sub-IPT lead responsible for the affected product or codebase. Sponsorship confirms that the proposed use is appropriate for the team and may proceed to IPT-level review. It does not grant program approval. -->
+<!-- Completed by the sub-Integrated Product Team (sub-IPT) lead responsible for the affected product or codebase. Sponsorship confirms that the proposed use is appropriate for the team and may proceed to Integrated Product Team (IPT)-level review. It does not grant program approval. -->
 
 Sponsoring Sub-IPT Lead: `<sub_ipt_lead>`
 
