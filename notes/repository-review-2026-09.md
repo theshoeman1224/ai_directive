@@ -27,8 +27,8 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 | 5 | IPT, sub-IPT, and SME never expanded | Needs clarification | Fix | Done |
 | 6 | "customer-deliverable branch" undefined | Needs clarification | Ignored | Done |
 | 7 | Safety-critical code scope gap | Needs clarification | Fix | Done |
-| 8 | Contract confirmation has no owner | Needs clarification | TBD | Open |
-| 9 | CURRENT_STATE status field undefined | Needs clarification | TBD | Open |
+| 8 | Contract confirmation has no owner | Needs clarification | Ignored | Done |
+| 9 | CURRENT_STATE status field undefined | Needs clarification | Fix | Done |
 | 10 | Submission template status lifecycle undefined | Needs clarification | TBD | Open |
 | 11 | Junior-developer heuristic has no anchored example | Needs clarification | TBD | Open |
 | 12 | Two formulas for the approval standard | Needs clarification | TBD | Open |
@@ -117,16 +117,16 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 * Where: [DIR-002](../directives/DIR-002-code-generation-customer-deliverables.md):40
 * Finding: "Confirm that the applicable contract permits AI-generated source code" names no role.
 * Reason: An unowned required action is unverifiable, and the repo's own standard says completion criteria must be testable.
-* Disposition: TBD
-* Status: Open
+* Disposition: Ignored. The proposing team is considered responsible for contract awareness as part of normal engineering ownership; no separate role assignment was wanted.
+* Status: Done
 
 ### 9. CURRENT_STATE status field undefined
 
 * Where: [CURRENT_STATE.md](../CURRENT_STATE.md):3
 * Finding: The snapshot file carries `Status: DRAFT`, but no documented lifecycle defines what would move it out of DRAFT.
 * Reason: Every other artifact has a documented lifecycle. Either define the field's meaning for a snapshot file or drop the field.
-* Disposition: TBD
-* Status: Open
+* Disposition: Fix. Removed the Status line from CURRENT_STATE.md; Snapshot Date, Owner, and the README's information-architecture entry convey freshness and authority better than an undefined lifecycle state.
+* Status: Done
 
 ### 10. Submission template status lifecycle undefined
 

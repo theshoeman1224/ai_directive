@@ -1,7 +1,5 @@
 # Current state
 
-Status: DRAFT
-
 Snapshot Date: 2026-09-04
 
 Owner: TBD
