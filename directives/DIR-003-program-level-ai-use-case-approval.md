@@ -58,7 +58,7 @@ Each proposed use case must include:
 
 ## Sub-IPT lead sponsorship
 
-Before IPT-level SME review, the sub-IPT lead responsible for the affected product or codebase must endorse the submission.
+Before Integrated Product Team (IPT)-level Subject Matter Expert (SME) review, the sub-Integrated Product Team (sub-IPT) lead responsible for the affected product or codebase must endorse the submission.
 
 Sponsorship confirms that the sub-IPT lead:
 

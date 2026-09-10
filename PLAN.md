@@ -25,7 +25,7 @@ This plan does not authorize customer-deliverable use by itself. Active directiv
 ## Current priorities
 
 * Define a lightweight process for teams to propose bounded code-generation use cases.
-* Require the responsible sub-IPT lead to sponsor each proposal before a small IPT-level SME board reviews it.
+* Require the responsible sub-Integrated Product Team (sub-IPT) lead to sponsor each proposal before a small Integrated Product Team (IPT)-level Subject Matter Expert (SME) board reviews it.
 * Define the correctness evidence needed to approve a use case.
 * Set a clear boundary between sandbox evaluation and customer-deliverable use.
 

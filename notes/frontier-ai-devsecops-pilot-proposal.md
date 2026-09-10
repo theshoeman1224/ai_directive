@@ -30,7 +30,7 @@ Approved frontier models such as ChatGPT or Claude may help engineers identify c
 
 ## Proposed pilot
 
-The IPT should sponsor a limited, time-bounded pilot that provides selected engineers with access to their preferred approved frontier AI model for DevSecOps-related activities.
+The Integrated Product Team (IPT) should sponsor a limited, time-bounded pilot that provides selected engineers with access to their preferred approved frontier AI model for DevSecOps-related activities.
 
 Participants should:
 

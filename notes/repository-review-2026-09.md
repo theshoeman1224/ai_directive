@@ -24,7 +24,7 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 | 2 | Level 3 definition is circular | Consistency conflict | Fix | Done |
 | 3 | Vendor names conflict with sanitization policy | Consistency conflict | Ignored | Done |
 | 4 | Tool-portability rule stated in four places | Consistency conflict | Fix | Done |
-| 5 | IPT, sub-IPT, and SME never expanded | Needs clarification | TBD | Open |
+| 5 | IPT, sub-IPT, and SME never expanded | Needs clarification | Fix | Done |
 | 6 | "customer-deliverable branch" undefined | Needs clarification | TBD | Open |
 | 7 | Safety-critical code scope gap | Needs clarification | TBD | Open |
 | 8 | Contract confirmation has no owner | Needs clarification | TBD | Open |
@@ -93,8 +93,8 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 * Where: [PLAN.md](../PLAN.md):28, [DIR-003](../directives/DIR-003-program-level-ai-use-case-approval.md):61, :74, used throughout
 * Finding: The acronyms IPT, sub-IPT, and SME are used throughout but never expanded or defined, and no glossary exists.
 * Reason: This is a public repository read by outsiders and AI agents who lack the org chart. Expanding on first use or adding a short glossary costs three lines.
-* Disposition: TBD
-* Status: Open
+* Disposition: Fix. Defined on first use in each document that uses them: PLAN.md:28, CURRENT_STATE.md:23, DIR-003:61, the AI use-case submission template, and the frontier pilot proposal. DIR-002 uses none of the three and needed no change. Definitions per the repository owner: Integrated Product Team (IPT), sub-Integrated Product Team (sub-IPT), Subject Matter Expert (SME).
+* Status: Done
 
 ### 6. "customer-deliverable branch" undefined
 

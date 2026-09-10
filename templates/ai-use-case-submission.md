@@ -80,13 +80,13 @@ Related Directive: [DIR-003: Program-level AI code-generation use-case approval]
 
 ## Requested approval
 
-<!-- State the exact use case and workflow boundaries the team is asking the SME board to approve. -->
+<!-- State the exact use case and workflow boundaries the team is asking the Subject Matter Expert (SME) board to approve. -->
 
 `<requested_approval_scope>`
 
 ## Sub-IPT lead sponsorship
 
-<!-- Completed by the sub-IPT lead responsible for the affected product or codebase. Sponsorship confirms that the proposed use is appropriate for the team and may proceed to IPT-level review. It does not grant program approval. -->
+<!-- Completed by the sub-Integrated Product Team (sub-IPT) lead responsible for the affected product or codebase. Sponsorship confirms that the proposed use is appropriate for the team and may proceed to Integrated Product Team (IPT)-level review. It does not grant program approval. -->
 
 Sponsoring Sub-IPT Lead: `<sub_ipt_lead>`
 

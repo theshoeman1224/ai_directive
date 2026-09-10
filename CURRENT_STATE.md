@@ -20,7 +20,7 @@ No plans, decisions, directives, or communications are recorded as approved.
 * Assignment of ownership and approval authority.
 * Review of the draft AI code-generation assumptions in [PLAN.md](PLAN.md).
 * Review of [DIR-001](directives/DIR-001-ai-model-data-and-usage-policy.md), [DIR-002](directives/DIR-002-code-generation-customer-deliverables.md), and [DIR-003](directives/DIR-003-program-level-ai-use-case-approval.md).
-* Definition of sub-IPT sponsorship responsibilities, the proposed IPT-level SME review authority, and correctness criteria.
+* Definition of sub-Integrated Product Team (sub-IPT) sponsorship responsibilities, the proposed Integrated Product Team (IPT)-level Subject Matter Expert (SME) review authority, and correctness criteria.
 * Development of a [working proposal for a limited frontier AI DevSecOps pilot](notes/frontier-ai-devsecops-pilot-proposal.md).
 
 ## Blocked
