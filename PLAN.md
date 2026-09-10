@@ -35,7 +35,7 @@ This plan does not authorize customer-deliverable use by itself. Active directiv
 * Approve bounded use cases, not general permission to generate code.
 * Allow teams to develop and test proposed use cases in a sandbox with any AI tool and interaction method whose data-use level permits the sandbox activity.
 * Do not merge sandbox output into a customer-deliverable branch or deliver it to a customer before the use case is approved.
-* Allow an approved use case to run with any company-approved AI tool without another use-case approval.
+* Keep use-case scope, tool portability, and reapproval conditions authoritative in [DIR-003](directives/DIR-003-program-level-ai-use-case-approval.md).
 * Require correctness evidence for each proposed use case.
 * Require sponsorship from the sub-IPT lead responsible for the affected product or codebase before program-level review.
 * Keep the proposing team and sub-IPT lead responsible for product-specific technical suitability, implementation, testing, and normal code review.
@@ -50,7 +50,7 @@ The following statements are planning assumptions. They are not active instructi
 3. Teams submit the proposed use case, its boundaries, its repeatable workflow, and correctness evidence.
 4. The responsible sub-IPT lead sponsors the proposal and confirms that it is appropriate for the team's product and codebase.
 5. A small IPT-level SME board reviews the sponsored proposal for simplicity, boundaries, evidence, and acceptable AI use.
-6. Approval applies only to the reviewed use case and its stated boundaries. The team may run that approved use case with any company-approved AI tool.
+6. Approval applies only to the reviewed use case and its stated boundaries, with tool portability and reapproval conditions as defined in [DIR-003](directives/DIR-003-program-level-ai-use-case-approval.md).
 7. Human engineers and the sub-IPT retain responsibility for detailed design, implementation, testing, and normal code review.
 
 ## Implementation plan

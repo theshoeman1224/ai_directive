@@ -22,8 +22,8 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 |---|---|---|---|---|
 | 1 | Review board described three ways | Consistency conflict | Fix | Done |
 | 2 | Level 3 definition is circular | Consistency conflict | Fix | Done |
-| 3 | Vendor names conflict with sanitization policy | Consistency conflict | TBD | Open |
-| 4 | Tool-portability rule stated in four places | Consistency conflict | TBD | Open |
+| 3 | Vendor names conflict with sanitization policy | Consistency conflict | Ignored | Done |
+| 4 | Tool-portability rule stated in four places | Consistency conflict | Fix | Done |
 | 5 | IPT, sub-IPT, and SME never expanded | Needs clarification | TBD | Open |
 | 6 | "customer-deliverable branch" undefined | Needs clarification | TBD | Open |
 | 7 | Safety-critical code scope gap | Needs clarification | TBD | Open |
@@ -75,16 +75,16 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 * Where: [DIR-001](../directives/DIR-001-ai-model-data-and-usage-policy.md):45, :57, :67, :89; [frontier AI pilot proposal](frontier-ai-devsecops-pilot-proposal.md):17
 * Finding: DIR-001 names Poolside, Microsoft Copilot, ChatGPT, and Claude, while the pilot proposal uses `<current_internal_ai_tool>` for the same kind of information.
 * Reason: Naming the program's Level 1 and Level 2 vendors in a public repository reveals procurement relationships, which the README warning covers under "program, project, customer, contract, and system names". The two files treat the same risk differently, so one of them is wrong.
-* Disposition: TBD
-* Status: Open
+* Disposition: Ignored. Tool names are intentionally public. The pilot proposal may keep its stricter placeholder; nothing requires it to name the tool, and no directive text changes.
+* Status: Done
 
 ### 4. Tool-portability rule stated in four places
 
 * Where: [PLAN.md](../PLAN.md):53, [DIR-002](../directives/DIR-002-code-generation-customer-deliverables.md):31, [DIR-003](../directives/DIR-003-program-level-ai-use-case-approval.md):35, :90
 * Finding: The rule that an approved use case may run with any program-approved AI tool without reapproval appears in at least four locations.
 * Reason: AGENTS.md says to keep each fact in one authoritative place. This is the most consequential rule in the strategy, and four copies will drift.
-* Disposition: TBD
-* Status: Open
+* Disposition: Fix. The complete rule now lives only in DIR-003's Scope of approval section, which gained the "boundaries do not change" qualifier that previously existed only in DIR-002. DIR-002 and the DIR-003 purpose and sandbox sentences are now pointers. PLAN.md's requirement and operating-model entries reference DIR-003 instead of restating the rule. A sixth instance in DIR-003's Sandbox evaluation section was found during the fix and handled the same way.
+* Status: Done
 
 ## Needs clarification
 

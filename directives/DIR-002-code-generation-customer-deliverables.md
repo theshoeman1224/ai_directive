@@ -28,7 +28,7 @@ Define the proposed conditions under which AI-generated source code may be merge
 
 Teams may evaluate code-generation use cases in a sandbox with any AI tool and interaction method whose data-use level permits the sandbox activity. Before generated source code enters a customer-deliverable branch or is delivered to a customer, the program must approve the use case under [DIR-003](DIR-003-program-level-ai-use-case-approval.md).
 
-Approval of a use case permits the team to run that use case with any company-approved AI tool. Changing between approved tools does not require another use-case approval when the use case and workflow boundaries remain unchanged.
+The scope of an approved use case, including permission to run it with different company-approved AI tools and the conditions requiring reapproval, is defined by [DIR-003](DIR-003-program-level-ai-use-case-approval.md).
 
 ## Scope
 
