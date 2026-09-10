@@ -67,6 +67,12 @@ Proposed requirements:
 * Repository-level `AGENTS.md` instructions must direct approved AI tools to apply the `-AI` suffix to every line of source code they generate.
 * Human code reviewers must verify that AI-generated lines are correctly tagged before accepting the change.
 
+## Safety-critical code
+
+AI-generated source code intended for safety-critical applications remains subject to all previously applicable safety standards and to each team's predefined safety-critical review requirements, including any additional review effort those requirements impose.
+
+This directive and the use-case approval under [DIR-003](DIR-003-program-level-ai-use-case-approval.md) are in addition to those requirements, not a replacement for them.
+
 ## Exceptions
 
 None currently exist.
@@ -85,7 +91,6 @@ Compliance requires evidence that:
 The following items must be resolved before this directive can become active:
 
 * Rules for modifying previously AI-generated lines.
-* Safety-critical code approval criteria.
 * The authoritative approved-tool and approved-use-case registers.
 
 ## Related directives

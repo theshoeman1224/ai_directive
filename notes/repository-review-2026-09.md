@@ -25,8 +25,8 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 | 3 | Vendor names conflict with sanitization policy | Consistency conflict | Ignored | Done |
 | 4 | Tool-portability rule stated in four places | Consistency conflict | Fix | Done |
 | 5 | IPT, sub-IPT, and SME never expanded | Needs clarification | Fix | Done |
-| 6 | "customer-deliverable branch" undefined | Needs clarification | TBD | Open |
-| 7 | Safety-critical code scope gap | Needs clarification | TBD | Open |
+| 6 | "customer-deliverable branch" undefined | Needs clarification | Ignored | Done |
+| 7 | Safety-critical code scope gap | Needs clarification | Fix | Done |
 | 8 | Contract confirmation has no owner | Needs clarification | TBD | Open |
 | 9 | CURRENT_STATE status field undefined | Needs clarification | TBD | Open |
 | 10 | Submission template status lifecycle undefined | Needs clarification | TBD | Open |
@@ -101,16 +101,16 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 * Where: [PLAN.md](../PLAN.md):15, :37, :49; [DIR-002](../directives/DIR-002-code-generation-customer-deliverables.md):29, :41
 * Finding: The term is used throughout the plan and directives but never defined.
 * Reason: The entire sandbox boundary hangs on this term. If two teams disagree about which branches are customer-deliverable, the core control fails.
-* Disposition: TBD
-* Status: Open
+* Disposition: Ignored. Teams already know which of their branches deliver to customers, and a generic definition was judged unnecessary. A definition can be added to DIR-002's Scope section later if a disagreement ever surfaces.
+* Status: Done
 
 ### 7. Safety-critical code scope gap
 
 * Where: [DIR-002](../directives/DIR-002-code-generation-customer-deliverables.md):35, :88
 * Finding: Scope covers all customer-deliverable code, while line 88 lists "Safety-critical code approval criteria" as unresolved.
 * Reason: If the criteria do not exist yet, the draft should carve safety-critical code out explicitly rather than leave readers to guess whether the directive already governs it.
-* Disposition: TBD
-* Status: Open
+* Disposition: Fix. Resolved with the repository owner's rule rather than a carve-out: DIR-002 now has a Safety-critical code section stating that AI-generated source code for safety-critical applications remains subject to all previously applicable safety standards and to each team's predefined safety-critical review requirements, including any extra review effort they impose, and that the use-case approval under DIR-003 is in addition to those requirements, not a replacement. The matching entry was removed from Unresolved items because the governing rule is now stated.
+* Status: Done
 
 ### 8. Contract confirmation has no owner
 
