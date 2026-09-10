@@ -33,7 +33,7 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 | 11 | Junior-developer heuristic has no anchored example | Needs clarification | Fix | Done |
 | 12 | Two formulas for the approval standard | Needs clarification | Fix | Done |
 | 13 | README automation phrasing | Needs clarification | Fix | Done |
-| 14 | "Work around" security phrasing | Needs clarification | TBD | Open |
+| 14 | "Work around" security phrasing | Needs clarification | Fix | Done |
 | 15 | Communication lifecycle between approval and merge | Needs clarification | TBD | Open |
 | 16 | "Program IP" coverage of credentials undefined | Needs clarification | TBD | Open |
 | 17 | No remediation guidance for committed sensitive data | Should be expanded | TBD | Open |
@@ -165,8 +165,8 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 * Where: [frontier AI pilot proposal](frontier-ai-devsecops-pilot-proposal.md):27
 * Finding: The phrase "work around version or installation constraints imposed by secured environments" appears in a public file.
 * Reason: It can be misread as advising circumvention of security controls. "Operate within" says the same thing safely, and the proposal itself states that the pilot "would not relax security requirements".
-* Disposition: TBD
-* Status: Open
+* Disposition: Fix. Replaced "work around" with "operate within" in notes/frontier-ai-devsecops-pilot-proposal.md:27.
+* Status: Done
 
 ### 15. Communication lifecycle between approval and merge
 
