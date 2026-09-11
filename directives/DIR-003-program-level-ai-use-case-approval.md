@@ -22,11 +22,13 @@ Related Decisions: None
 
 ## Purpose
 
-Define how teams demonstrate and seek program approval for code-generation use cases, including team-level sponsorship and program-level review. Tool approval and use-case approval are separate.
+Define how teams demonstrate and seek program approval for bounded code-generation use cases, including team-level sponsorship and program-level review. Tool approval and use-case approval are separate.
 
 Proposed use cases must be simple, bounded, demonstrated, and compliant with applicable restrictions.
 
 A suitable use case should be comparable to a task that could be given to a junior developer on their first day and completed correctly by the end of the day without additional design guidance.
+
+Teams that seek broader repository/module-level code-generation authority may instead pursue the higher-assurance approval path defined in [DIR-004](DIR-004-full-ai-code-generation-approval.md).
 
 ## Sandbox evaluation
 
@@ -89,6 +91,8 @@ Material expansion of the use case requires renewed sub-IPT sponsorship and prog
 
 Changing between company-approved AI tools does not require reapproval, provided the use case and workflow boundaries do not change.
 
+A team with an active repository/module-level approval under [DIR-004](DIR-004-full-ai-code-generation-approval.md) does not need a separate DIR-003 approval for each use case performed within the repositories, modules, tools, and other boundaries explicitly covered by that approval.
+
 ## Approval record
 
 Approved use cases will be recorded in `<internal_approval_register>`. That register is the authoritative record of use-case approval.
@@ -109,7 +113,7 @@ Each entry must include:
 * Approval date
 * Approving SMEs
 
-The register allows teams to see how AI is used across the program. An existing entry does not authorize a different use case.
+The register allows teams to see how AI is used across the program. An existing entry does not authorize a different use case unless the team has separate repository/module-level approval under DIR-004 that covers the work.
 
 ## Exceptions
 
@@ -117,11 +121,12 @@ None currently exist.
 
 ## Verification and compliance
 
-A team may merge generated source code into a customer-deliverable branch or deliver it to a customer only when the authoritative register records the required sub-IPT sponsorship, shows that the use case is approved, and confirms that the work remains within the recorded boundaries.
+A team may merge generated source code into a customer-deliverable branch or deliver it to a customer under this directive only when the authoritative register records the required sub-IPT sponsorship, shows that the bounded use case is approved, and confirms that the work remains within the recorded boundaries.
 
 ## Related directives
 
 * [DIR-002: Code generation for customer deliverables](DIR-002-code-generation-customer-deliverables.md)
+* [DIR-004: Full AI code-generation approval](DIR-004-full-ai-code-generation-approval.md)
 
 ## Related communications
 
