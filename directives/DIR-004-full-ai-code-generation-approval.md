@@ -22,7 +22,7 @@ Related Decisions: None
 
 ## Purpose
 
-Define a higher-assurance approval path that allows a team to use approved AI tools for broad code-generation purposes within specifically approved repositories and modules without obtaining separate approval for each individual use case.
+Define a higher-assurance approval path that allows a team to use Level 1 AI tooling permitted under [DIR-001](DIR-001-ai-model-data-and-usage-policy.md) for broad code-generation purposes within specifically approved repositories and modules without obtaining separate approval for each individual use case.
 
 This approval is based on demonstrated software-assurance controls, not an assumption that AI-generated code is correct.
 
@@ -36,6 +36,8 @@ This broader authority does not waive any other engineering, review, tagging, sa
 
 ## Scope of approval
 
+This directive applies only to AI-generated source code intended for customer-deliverable branches or customer delivery.
+
 Approval applies only to the repositories and modules explicitly reviewed by the SME board and recorded in `<internal_approval_register>`.
 
 Each approval record must identify:
@@ -43,7 +45,6 @@ Each approval record must identify:
 * Team
 * Approved repositories
 * Approved modules or components
-* Approved AI tools and models
 * Required regression controls
 * Required static-analysis controls
 * Required coverage thresholds
@@ -54,7 +55,9 @@ Each approval record must identify:
 
 Material expansion beyond the approved repositories or modules requires renewed SME review.
 
-Only company-approved AI tools and models may be used for customer-deliverable source code under this approval.
+AI tooling used under this directive must satisfy the Level 1 requirements defined in [DIR-001](DIR-001-ai-model-data-and-usage-policy.md). Only Level 1 tooling may be used to generate source code that enters customer-deliverable products.
+
+This directive does not independently approve AI tools or models. Tool eligibility remains governed by DIR-001.
 
 ## Entry requirements
 
@@ -160,9 +163,8 @@ Conditions that may trigger reevaluation include:
 * required quality controls being disabled or repeatedly bypassed,
 * regression or static-analysis capability materially degrading,
 * coverage falling below the approved threshold,
-* repeated or severe escaped defects associated with AI-generated changes,
-* material changes to the approved repositories or modules, or
-* changes to the approved AI tooling or model that affect the basis of approval.
+* repeated or severe escaped defects associated with AI-generated changes, or
+* material changes to the approved repositories, modules, workflow, or reviewed assurance controls.
 
 Specific quantitative suspension or revocation thresholds are TBD and may be established as program evidence grows.
 
@@ -170,7 +172,7 @@ Specific quantitative suspension or revocation thresholds are TBD and may be est
 
 Exceptions to the normal quality-gate requirements must be documented and handled through the applicable engineering exception process.
 
-No exception removes the requirement for human review or permits use of unapproved AI tooling for customer-deliverable source code.
+No exception removes the requirement for human review or permits use of AI tooling that does not satisfy the Level 1 requirements of DIR-001 for customer-deliverable source code.
 
 ## Verification and compliance
 
@@ -179,12 +181,13 @@ A team may operate under Full AI Code Generation Approval only when the authorit
 * the specific repositories and modules are approved,
 * the required automated regression, coverage, static-analysis, and quality-gate controls are in place,
 * the required evidence period has been completed,
-* the AI tool and model are approved,
+* the AI tooling used satisfies the Level 1 requirements of DIR-001,
 * ongoing metrics remain available for review, and
 * the work remains within the approved change-size and repository/module boundaries.
 
 ## Related directives
 
+* [DIR-001: AI tool data and output usage](DIR-001-ai-model-data-and-usage-policy.md)
 * [DIR-002: Code generation for customer deliverables](DIR-002-code-generation-customer-deliverables.md)
 * [DIR-003: Program-level AI code-generation use-case approval](DIR-003-program-level-ai-use-case-approval.md)
 
