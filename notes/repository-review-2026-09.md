@@ -73,9 +73,9 @@ Confirmed `Fix` items go through the normal branch, commit, and pull-request pro
 ### 3. Vendor names conflict with sanitization policy
 
 * Where: [DIR-001](../directives/DIR-001-ai-model-data-and-usage-policy.md):45, :57, :67, :89; [frontier AI pilot proposal](frontier-ai-devsecops-pilot-proposal.md):17
-* Finding: DIR-001 names Poolside, Microsoft Copilot, ChatGPT, and Claude, while the pilot proposal uses `<current_internal_ai_tool>` for the same kind of information.
+* Finding: DIR-001 names the Level 1 and Level 2 vendors by name, while the pilot proposal uses `<current_internal_ai_tool>` for the same kind of information. The named vendors are now recorded in this file only as `<level_1>` and `<level_2>`.
 * Reason: Naming the program's Level 1 and Level 2 vendors in a public repository reveals procurement relationships, which the README warning covers under "program, project, customer, contract, and system names". The two files treat the same risk differently, so one of them is wrong.
-* Disposition: Ignored. Tool names are intentionally public. The pilot proposal may keep its stricter placeholder; nothing requires it to name the tool, and no directive text changes.
+* Disposition: Ignored. Tool names are intentionally public. The pilot proposal may keep its stricter placeholder; nothing requires it to name the tool, and no directive text changes. Superseded 2026-09-20: policy reversed. All vendor names were scrubbed from the repository, with DIR-001 now using `<level_1>` and `<level_2>` placeholders so tools can change without directive edits.
 * Status: Done
 
 ### 4. Tool-portability rule stated in four places

@@ -42,7 +42,7 @@ Output may be incorporated into deliverable products when all other applicable p
 
 **Current tool:**
 
-* Poolside
+* <level_1>
 
 Use of AI-generated source code remains subject to the code-generation requirements defined by DIR-002 and DIR-003.
 
@@ -54,7 +54,7 @@ AI-generated output must not be incorporated into deliverable products.
 
 **Current tool:**
 
-* Microsoft Copilot
+* <level_2>
 
 ### Level 3 — Non-IP use only
 
@@ -88,7 +88,7 @@ Users may use whichever AI tool they prefer, provided the tool's data-use level 
 
 The broad permissions of a Level 1 tool do not make it the preferred tool for every task.
 
-When a task does not require company IP and its output will not enter a deliverable product, users may prefer capable frontier AI models such as ChatGPT or Claude over Poolside.
+When a task does not require company IP and its output will not enter a deliverable product, users may prefer capable frontier AI models such as ChatGPT or Claude over <level_1>.
 
 When company IP is required but the AI output will not enter a deliverable product, users may prefer a Level 2 tool when it provides better capability than the available Level 1 tool.
 
