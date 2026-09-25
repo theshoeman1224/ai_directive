@@ -48,7 +48,9 @@ Normal approval under this directive applies only to explicitly qualified module
 
 This directive does not authorize autonomous or agentic software-development capabilities merely because the underlying AI tool is approved.
 
-**TODO: Identify the authoritative source for approved AI interaction modes and interfaces. The initial policy should explicitly identify currently approved developer-in-the-loop interfaces and define the approval path for additional interfaces, CLI tooling, or agentic capabilities.**
+Approved AI interfaces and interaction modes must be maintained in a separate authoritative source so this directive remains independent of specific products or interfaces.
+
+**TODO: Identify the authoritative source for approved AI interaction modes and interfaces and define the approval path for additional interfaces, CLI tooling, or agentic capabilities.**
 
 ## Required user training
 
@@ -76,18 +78,31 @@ Qualification is based on the team's ability to detect incorrect AI-generated ch
 
 ### Minimum assurance expectations
 
-The requested scope must have verification infrastructure appropriate to the software and its risks. At minimum, the team must identify:
+The requested scope must have verification infrastructure appropriate to the software and its risks.
+
+At a minimum, the module or component must have regression testing that produces reproducible results and meaningfully exercises the behavior likely to be modified.
+
+Regression testing is not required to run on every build or Merge Request when that cadence is impractical, including for embedded software where test execution may require constrained hardware, long-duration environments, or other expensive resources.
+
+When regression testing does not run on every build or Merge Request, the sub-IPT must:
+
+* document the current regression cadence;
+* explain why that cadence is reasonable for the affected software;
+* make a reasonable effort to increase the cadence when seeking AI-assisted code-generation authority;
+* describe how failures are surfaced and associated with the changes that may have introduced them; and
+* demonstrate that the delay between introduction and detection of a fault remains manageable.
+
+The team must also identify:
 
 * the build and integration checks that apply to the module or component;
-* preexisting regression or automated tests that exercise the affected behavior;
-* how test results are incorporated into the normal review or integration workflow;
+* how regression and other verification results are incorporated into the normal review or integration workflow;
 * applicable static-analysis, compiler-warning, coding-standard, or other automated checks;
 * the normal human code-review process; and
 * any additional specialized review required for safety-critical, security-critical, mission-critical, timing-sensitive, concurrency-sensitive, architectural, or otherwise high-consequence software.
 
-The SME board evaluates whether these controls provide sufficient independent assurance for the requested scope. A fixed program-wide test or coverage threshold is not assumed to be appropriate for every software stack.
+The SME board evaluates whether these controls provide sufficient independent assurance for the requested scope. A fixed program-wide coverage threshold or per-build regression requirement is not assumed to be appropriate for every software stack.
 
-**TODO: Determine whether program-wide minimum regression, coverage, changed-code coverage, static-analysis, or quality-gate requirements are necessary in addition to team-specific justification.**
+**TODO: Determine whether additional program-wide minimum coverage, changed-code coverage, static-analysis, or quality-gate requirements are necessary beyond the reproducible-regression baseline and team-specific justification.**
 
 ## Existing regression baseline
 
@@ -95,7 +110,7 @@ Normal AI-assisted code generation is intended for software where meaningful ind
 
 A module or component should not receive normal qualification merely because tests exist somewhere in the repository. The team must demonstrate that the applicable regression or verification infrastructure meaningfully exercises the behavior likely to be modified.
 
-Where a module or component lacks adequate preexisting regression or verification infrastructure, additional approval is required before AI-generated product functionality may be integrated under this directive.
+Where a module or component lacks adequate preexisting regression or verification infrastructure, additional approval from the responsible sub-IPT lead and an SME outside the affected sub-IPT is required before AI-generated product functionality may be integrated under this directive.
 
 ## AI-assisted creation of test infrastructure
 
@@ -126,7 +141,9 @@ The purpose of this additional approval is to confirm that the proposed verifica
 
 AI may assist in creating both the new implementation and its supporting tests, but the implementation must be verified against independently established expected behavior before delivery.
 
-**TODO: Define what constitutes a "new interface" or "materially new capability" for this requirement and identify who grants the additional approval. The definition should avoid capturing ordinary contained implementation work that is already well specified and independently verifiable.**
+Additional approval for this category requires both the responsible sub-IPT lead and an SME outside the affected sub-IPT.
+
+**TODO: Define what constitutes a "new interface" or "materially new capability" for this requirement. The definition should avoid capturing ordinary contained implementation work that is already well specified and independently verifiable.**
 
 ## Human responsibility and review
 
@@ -156,8 +173,8 @@ An AI-assisted Merge Request must represent a single cohesive engineering purpos
 
 Normal module or component qualification does not by itself authorize:
 
-* AI-generated functionality in areas without adequate independent regression or verification infrastructure;
-* new interfaces or materially new capabilities without an established independent verification basis;
+* AI-generated functionality in areas without adequate independent regression or verification infrastructure, unless additionally approved by the responsible sub-IPT lead and an SME outside the affected sub-IPT;
+* new interfaces or materially new capabilities without an established independent verification basis and the required additional approval from the responsible sub-IPT lead and an SME outside the affected sub-IPT;
 * changes exceeding the approved review-size or reviewability limits;
 * use through an AI interface, execution mode, or agentic capability that has not been separately approved;
 * expansion outside the approved module or component boundary; or
