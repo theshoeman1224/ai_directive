@@ -12,10 +12,6 @@ Effective Date: TBD
 
 Review Date: TBD
 
-Supersedes: None
-
-Superseded By: None
-
 Related Decisions: None
 
 > DRAFT: This proposed directive is not active and grants no permission.
