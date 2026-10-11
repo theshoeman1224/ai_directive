@@ -6,7 +6,7 @@ Owner: TBD
 
 ## Currently active
 
-The documentation structure is in place for review. [PLAN.md](PLAN.md) and four related directives describe a draft AI code-generation adoption strategy. They are not approved and create no active instruction.
+The documentation structure is in place for review. [PLAN.md](PLAN.md) and three initial-release directives describe a draft AI code-generation adoption strategy. They are not approved and create no active instruction.
 
 ## Approved
 
@@ -20,21 +20,19 @@ No plans, decisions, directives, or communications are recorded as approved.
 * Definition of the AI-altered file header convention.
 * Validation of the default AI-generated Merge Request review-size limit.
 * Definition of the maximum temporary regression-exception duration and the evaluation required at expiration.
-* Definition of the boundary for new interfaces or materially new capabilities requiring additional approval.
-* Definition of higher-autonomy and agentic approval requirements under DIR-004.
+* Definition of the boundary for new or materially changed interfaces requiring additional approval.
 * Development of a [working proposal for a limited frontier AI DevSecOps pilot](notes/frontier-ai-devsecops-pilot-proposal.md).
 
 ## Blocked
 
 * Plan approval remains blocked until ownership, approval authority, qualification-record location, provenance-header rules, and remaining reviewability/exception decisions are resolved.
 * Directive activation remains blocked until required ownership, approval metadata, effective dates, and authoritative registers are established.
-* DIR-004 activation is additionally blocked until higher-autonomy capability thresholds, approval authority, and mandatory human checkpoints are defined.
 
 ## Needs attention
 
 * Validate whether the proposed default review-size limit should count all added source code or production code only.
 * Confirm that temporary regression exceptions remain genuinely time bounded and require remediation progress at expiration.
-* Ensure approved AI interfaces and autonomy levels are not inferred from tool approval alone.
+* Ensure approved AI interfaces are not inferred from tool approval alone.
 
 ## Next major actions
 
@@ -44,18 +42,19 @@ No plans, decisions, directives, or communications are recorded as approved.
 4. Finalize the file-level AI provenance header.
 5. Finalize the review-size rule.
 6. Finalize temporary regression-exception duration and evaluation rules.
-7. Define new-interface/material-capability boundaries.
+7. Define the boundary for new or materially changed interfaces.
 8. Record an explicit decision if the strategy is approved.
 
-## Active directives
-
-None.
+## Initial release directives
 
 The following drafts are under review and impose no requirements:
 
 * [DIR-001: AI tool data and output usage](directives/DIR-001-ai-model-data-and-usage-policy.md)
 * [DIR-002: Code generation for customer deliverables](directives/DIR-002-code-generation-customer-deliverables.md)
 * [DIR-003: AI-assisted code-generation module qualification](directives/DIR-003-ai-code-generation-module-qualification.md)
-* [DIR-004: Higher-autonomy and agentic AI development](directives/DIR-004-higher-autonomy-agentic-ai-development.md)
+
+## Deferred draft
+
+* [DIR-004: Higher-autonomy and agentic AI development](directives/DIR-004-DEFERRED-higher-autonomy-agentic-ai-development.md) — not part of the initial release and grants no permission.
 
 [The directive example](directives/EXAMPLE-directive.md) is also not active and imposes no requirements.
