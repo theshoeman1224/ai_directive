@@ -18,21 +18,9 @@ Related Decisions: None
 
 ## Purpose
 
-Define the baseline conditions under which developer-in-the-loop AI code generation may be used within approved software modules or components for customer-deliverable source code.
+Define the conditions under which developer-in-the-loop AI code generation may be used within approved software modules or components for customer-deliverable source code.
 
-This directive establishes qualification requirements for the software-assurance environment of those modules or components. Teams remain responsible for deciding where AI is useful within an approved scope.
-
-Tool and data-use requirements remain governed by [DIR-001](DIR-001-ai-model-data-and-usage-policy.md), and customer-deliverable requirements remain governed by [DIR-002](DIR-002-code-generation-customer-deliverables.md).
-
-## Core principles
-
-* AI proposes code; human engineers remain responsible for the resulting implementation.
-* Qualification is based on whether the affected software can be independently verified.
-* Automated testing is an important control but does not independently establish correctness.
-* If AI generates both an implementation and its tests, passing those tests cannot be the sole evidence of correctness.
-* AI-generated changes must remain sufficiently bounded for meaningful human review.
-* AI may accelerate implementation, but it must not replace the engineering judgment or system knowledge required to understand, verify, maintain, and debug the resulting software.
-* Existing safety, security, mission-critical, architectural, contractual, qualification, and release requirements continue to apply.
+Tool and data-use requirements are governed by [DIR-001](DIR-001-ai-model-data-and-usage-policy.md). Customer-deliverable requirements are governed by [DIR-002](DIR-002-code-generation-customer-deliverables.md).
 
 ## Scope
 
@@ -48,25 +36,17 @@ Approved interfaces and interaction modes must be maintained in a separate autho
 
 Personnel must complete all training designated as required for AI use before submitting AI-generated source code for customer-deliverable use.
 
-The authoritative list of required AI training, required audiences, and completion windows is maintained at `<ai_training_list_url>`.
+The authoritative list of required training, applicable audiences, and completion windows is maintained at `<ai_training_list_url>`. When new mandatory training is added, affected AI users must complete it within the timeframe specified there.
 
-When new mandatory training is added to that list, affected AI users must complete it within the completion window defined there.
-
-Training completion establishes user eligibility only. It does not independently authorize a tool, interaction mode, repository, module, component, or otherwise restricted activity.
-
-Reviewers remain subject to existing code-review qualification requirements.
-
-**TODO: Reevaluate reviewer-specific AI training if dedicated training becomes available or evidence shows that reviewers need additional qualification.**
+**TODO: Replace `<ai_training_list_url>` with the authoritative internal training-list URL.**
 
 ## Module or component qualification
 
-A sub-Integrated Product Team (sub-IPT) seeking normal AI-assisted code-generation authority must identify the modules or components for which approval is requested.
+A sub-Integrated Product Team (sub-IPT) seeking AI-assisted code-generation authority must identify the modules or components for which approval is requested.
 
 The responsible sub-IPT lead must sponsor the requested scope and confirm that the team has appropriate engineering ownership of the affected software.
 
 A small Integrated Product Team (IPT)-level Subject Matter Expert (SME) board reviews the requested scope and determines whether the software-assurance environment is sufficient for developer-in-the-loop AI code generation.
-
-Qualification is based on the team's ability to detect incorrect AI-generated changes through independent engineering controls.
 
 ### Minimum regression baseline
 
@@ -115,21 +95,17 @@ At the end of the exception period, the sub-IPT must evaluate the planned regres
 
 ## AI-assisted creation of test infrastructure
 
-AI may be used to create, expand, refactor, or improve test infrastructure, including for modules or components that are not yet qualified for AI-assisted product-code generation.
+AI may be used to create or improve regression and test infrastructure.
 
-AI-generated tests may help establish the regression infrastructure required for later qualification.
+When AI generates both functionality and its tests, those tests cannot serve as the sole independent evidence of correctness. Tests used for qualification must be validated against an independent source of expected behavior.
 
-Before AI-generated tests are relied upon for qualification, they must be validated against an independent source of expected behavior, such as approved requirements, interface or design specifications, known-good historical behavior, independently derived test vectors, reference models, integration behavior, or direct SME review.
+## New interfaces
 
-## New interfaces and materially new capabilities
+A new interface, or a material change to an existing interface, requires additional approval when an established independent verification baseline does not exist.
 
-AI-generated changes that create a new interface, introduce materially new system behavior, or establish a capability without a preexisting independent regression baseline require additional approval before integration into a customer-deliverable branch.
+Additional approval requires both the responsible sub-IPT lead and an SME outside the affected sub-IPT. The approval must identify an independent source of expected behavior, such as requirements, interface specifications, reference behavior, or independently derived test results.
 
-Additional approval requires both the responsible sub-IPT lead and an SME outside the affected sub-IPT.
-
-The approval must confirm that the verification approach has an independent source of expected behavior. AI may assist in creating both the implementation and its supporting tests, but those tests cannot be the sole basis for determining correctness.
-
-**TODO: Define what constitutes a "new interface" or "materially new capability" without capturing ordinary contained implementation work that is already well specified and independently verifiable.**
+**TODO: Define the exact boundary for a new or materially changed interface that requires additional approval.**
 
 ## Human responsibility and engineering competency
 
@@ -137,21 +113,13 @@ Human engineers remain accountable for all AI-generated source code they submit.
 
 The submitting engineer must be capable of explaining and evaluating the generated change and must not rely solely on the AI's explanation, generated tests, or successful automated execution as evidence of correctness.
 
-AI assistance must supplement, not replace, the software-engineering competency needed to design, understand, verify, maintain, and debug the affected software.
-
 Engineers submitting AI-generated changes must understand the implementation sufficiently to explain its relevant logic, assumptions, failure behavior, and interactions with affected software.
-
-AI assistance does not remove responsibility to understand relevant system behavior, architectural boundaries, interfaces, and downstream effects. A locally correct change is not acceptable if its broader system impact has not been adequately understood and reviewed.
-
-Teams and technical leads must avoid patterns of AI usage that materially erode the development or exercise of core software-engineering skills, particularly when mentoring or developing less-experienced engineers.
 
 ## Human review
 
-Normal peer review remains mandatory.
+Normal peer review remains mandatory in accordance with DIR-002.
 
-Reviewers must evaluate the implementation, not merely confirm that automated checks passed.
-
-AI may assist with code review or test generation, but AI assistance does not replace required human review or independently established verification.
+Reviewers must evaluate the implementation and must not rely solely on successful automated checks.
 
 ## Change size and reviewability
 
@@ -202,25 +170,23 @@ Exceptions not explicitly defined by this directive must be approved through the
 
 No exception removes human accountability or permits use of an AI tool, data type, or interaction mode that is otherwise prohibited.
 
-**TODO: Identify the authoritative exception process and approval role for exceptions not already covered by the temporary-regression or new-capability rules above.**
+**TODO: Identify the authoritative exception process and approval role for exceptions not already covered by the temporary-regression or new-interface rules above.**
 
-## Verification and compliance
+## Conditions for use
 
-Developer-in-the-loop AI code generation for customer-deliverable source code is permitted under this directive only when:
+AI-assisted source-code generation may be used for customer-deliverable software only when:
 
-* the affected module or component is recorded as qualified, or the specific work is covered by an active temporary exception;
-* the engineer has completed required AI training;
-* the AI tool and interaction mode are separately approved for the activity;
-* applicable regression, verification, analysis, and human-review controls remain in place;
-* the change remains within applicable reviewability limits;
-* any required additional approval has been obtained; and
-* all requirements in DIR-001, DIR-002, and other applicable engineering or contractual controls are satisfied.
+* the module or component is qualified, or the specific work is covered by an active exception;
+* required AI training is complete;
+* the AI tool and interaction mode are approved;
+* required regression, verification, and human-review controls remain in place;
+* the change remains within applicable reviewability limits; and
+* all applicable DIR-001 and DIR-002 requirements are satisfied.
 
 ## Related directives
 
 * [DIR-001: AI tool data and output usage](DIR-001-ai-model-data-and-usage-policy.md)
 * [DIR-002: Code generation for customer deliverables](DIR-002-code-generation-customer-deliverables.md)
-* [DIR-004: Higher-autonomy and agentic AI development](DIR-004-higher-autonomy-agentic-ai-development.md)
 
 ## Related communications
 
