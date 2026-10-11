@@ -27,10 +27,12 @@ Use the files in [templates/](templates/) for new records. Before allocating an 
 
 Do not infer approval from a merge, meeting, message, or request to draft. Record verified approvers and dates. Leave unknown values as `TBD` or a descriptive placeholder.
 
-Never delete a superseded decision or directive. Update both sides of the relationship:
+Before a directive or decision has been approved or issued, update the working document to reflect the current proposed state. Do not retain obsolete draft wording, redirect files, or supersession metadata solely to preserve pre-release history; Git and pull-request history already provide that record.
+
+Once a directive or decision has been approved or issued, preserve the record if it is later replaced or retired. For a superseded issued record:
 
 * the old record becomes `Superseded` for a decision or `SUPERSEDED` for a directive and names `Superseded By`,
-* the replacement names `Supersedes`,
+* the replacement names `Supersedes`, and
 * related links remain navigable.
 
 Only an approved directive may become `ACTIVE`. Only mark a communication `SENT` after it has actually been issued.
@@ -56,7 +58,8 @@ The prompt given to an AI assistant is not a public-release authorization.
 * [ ] Status and approval metadata are accurate and explicit.
 * [ ] Active instructions live in a directive, not only in a plan, note, or communication.
 * [ ] Related records and links are updated.
-* [ ] Historical rationale and superseded records remain intact.
+* [ ] Issued historical rationale and superseded records remain intact.
+* [ ] Unissued drafts contain only the current proposed state.
 * [ ] New IDs are unique and monotonically increasing.
 * [ ] Link validation passes, or any narrow exclusion is justified.
 
