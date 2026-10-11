@@ -1,6 +1,6 @@
 # Notes
 
-> NON-AUTHORITATIVE: Content in this directory may be incomplete, unapproved, incorrect, historical, or obsolete. It must not be treated as a decision, directive, or current plan.
+> NON-AUTHORITATIVE: Content in this directory may be incomplete, unapproved, incorrect, or obsolete. It must not be treated as a decision, directive, or current plan.
 
 Use this directory for meeting notes, brainstorming, investigation notes, research summaries, temporary analysis, and discussion outcomes. Promote durable conclusions into [PLAN.md](../PLAN.md), a [decision](../decisions/), a [directive](../directives/), or another appropriate authoritative artifact.
 
@@ -11,4 +11,3 @@ Use [the meeting-notes template](../templates/meeting-notes.md) when it fits. Ma
 ## Current working documents
 
 * [Frontier AI pilot for DevSecOps activities](frontier-ai-devsecops-pilot-proposal.md) — Non-authoritative proposal for evaluating frontier AI models in policy-compliant, non-IP DevSecOps work.
-* [Repository review findings](repository-review-2026-09.md) — Historical working review performed before the October 2026 redesign of DIR-003 from per-use-case approval to module/component qualification. Findings that reference the former DIR-003 model or its old filename/template should be treated as historical context rather than current policy guidance.
