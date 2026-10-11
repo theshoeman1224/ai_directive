@@ -22,19 +22,19 @@ This does not mean the current tool has no value. Its demonstrated strengths sho
 
 ## Opportunity
 
-Existing policy permits frontier AI models to support certain non-deliverable activities when applicable input and output restrictions are followed. DevSecOps work represents a strong opportunity for this type of use.
+Existing policy permits Level 3 frontier AI models to support qualifying non-IP, non-deliverable activities when applicable input and output restrictions are followed. Level 3 treatment does not make those tools company-approved for company-IP or deliverable use. DevSecOps work that can be performed without company IP represents a potential opportunity for this type of use.
 
 Teams frequently need to establish or modify CI workflows, evaluate available tools, develop internal automation, and operate within version or installation constraints imposed by secured environments. These tasks often require research, troubleshooting, and reasoning across multiple possible approaches.
 
-Approved frontier models such as ChatGPT or Claude may help engineers identify compatible solutions, evaluate alternatives, and develop workable approaches within the tools available to them.
+Frontier models such as ChatGPT or Claude may help engineers identify compatible solutions, evaluate alternatives, and develop workable approaches when the task can be performed within the Level 3 restrictions defined by DIR-001.
 
 ## Proposed pilot
 
-The Integrated Product Team (IPT) should sponsor a limited, time-bounded pilot that provides selected engineers with access to their preferred approved frontier AI model for DevSecOps-related activities.
+The Integrated Product Team (IPT) should sponsor a limited, time-bounded pilot that provides selected engineers with access to qualifying frontier AI models for DevSecOps-related activities that remain within applicable Level 3 restrictions.
 
 Participants should:
 
-* have active CI, automation, or internal tooling work;
+* have active CI, automation, or internal tooling work suitable for non-IP frontier-model use;
 * voluntarily participate and consistently use the capability;
 * comply with all applicable data-input and output-use restrictions; and
 * record measurable results from representative tasks.
@@ -59,4 +59,4 @@ These results should be compared with license costs and the baseline effort for 
 
 Leadership is requested to sponsor and fund a limited frontier AI pilot for selected DevSecOps users, designate an owner for collecting results, and review the measured outcomes before deciding whether broader access is justified.
 
-The pilot would provide evidence for determining whether frontier AI access can contribute materially to the program's cycle-time objective.
+The pilot would provide evidence for determining whether frontier AI access can contribute materially to the program's cycle-time objective while remaining within existing data-use restrictions.
