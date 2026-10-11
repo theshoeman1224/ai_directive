@@ -8,117 +8,110 @@ Approved By: TBD
 
 Approval Date: TBD
 
-Last Updated: 2026-09-11
+Last Updated: 2026-10-11
 
 ## Objective
 
 Authorize teams to use company-approved AI tools for code generation while keeping human engineers accountable for source code merged into customer-deliverable branches or delivered to customers.
 
-The proposed adoption model provides two approval paths: bounded use-case approval for normal adoption and a higher-assurance repository/module approval path for teams that demonstrate mature automated software-assurance controls.
+The adoption model qualifies software modules or components based on their verification and review environment. Higher-autonomy or agentic capabilities require separate approval.
 
 ## Scope
 
-This plan covers the proposed adoption model for AI-assisted code generation, including sandbox evaluation, use-case approval, higher-assurance repository/module approval, correctness evidence, automated quality controls, and human responsibility for delivered source code.
-
-Teams already have access to AI tools. This plan governs when source code generated with a company-approved AI tool may enter a customer-deliverable branch or be delivered to a customer. It does not govern account provisioning or how a team interacts with an approved tool.
+This plan covers AI-assisted code generation for customer-deliverable software, including tool/data eligibility, module qualification, required training, regression expectations, human review, reviewability limits, temporary exceptions, and higher-autonomy capabilities.
 
 This plan does not authorize customer-deliverable use by itself. Active directives remain the source of truth for operational instructions.
 
 ## Current priorities
 
-* Define a lightweight process for teams to propose bounded code-generation use cases.
-* Require the responsible sub-Integrated Product Team (sub-IPT) lead to sponsor each bounded-use proposal before a small Integrated Product Team (IPT)-level Subject Matter Expert (SME) board reviews it.
-* Define the correctness evidence needed to approve a bounded use case.
-* Define a higher-assurance path for repository/module-level code-generation approval based on demonstrated automated regression, coverage, static analysis, and enforceable quality gates.
-* Set a clear boundary between sandbox evaluation and customer-deliverable use.
+* Establish module/component qualification as the normal path for developer-in-the-loop AI code generation.
+* Require reproducible regression testing and a justified test cadence appropriate to each software environment.
+* Require AI users to complete the training identified at `<ai_training_list_url>` within the stated completion windows.
+* Protect human reviewability, engineering competency, and system/architecture understanding as AI increases implementation speed.
+* Define temporary, time-bounded exceptions for modules that do not yet have sufficient regression infrastructure, with a required remediation plan.
+* Require additional approval for new interfaces or materially new capabilities without an established independent verification basis.
+* Keep higher-autonomy and agentic development under a separate approval model.
 
 ## Requirements
 
-* Use only company-approved AI tools for source code intended for a customer-deliverable branch or customer delivery.
-* Use bounded use-case approval under [DIR-003](directives/DIR-003-program-level-ai-use-case-approval.md) as the default adoption path.
-* Allow broader repository/module-level code-generation approval only when the team satisfies the higher-assurance requirements in [DIR-004](directives/DIR-004-full-ai-code-generation-approval.md).
-* Allow teams to develop and test proposed use cases in a sandbox with any AI tool and interaction method whose data-use level permits the sandbox activity.
-* Do not merge sandbox output into a customer-deliverable branch or deliver it to a customer before the applicable approval path is satisfied.
-* Keep use-case scope, tool portability, and reapproval conditions authoritative in [DIR-003](directives/DIR-003-program-level-ai-use-case-approval.md).
-* Keep repository/module scope, automated quality controls, evidence requirements, change-size limits, ongoing monitoring, and suspension conditions authoritative in [DIR-004](directives/DIR-004-full-ai-code-generation-approval.md).
-* Require correctness evidence for each bounded use case and demonstrable software-assurance evidence for repository/module-level approval.
-* Require sponsorship from the sub-IPT lead responsible for the affected product or codebase before program-level review.
-* Keep the proposing team and sub-IPT lead responsible for product-specific technical suitability, implementation, testing, and normal code review.
-* Keep the IPT-level SME review focused on whether the proposed approval path has sufficient boundaries and evidence for the authority being requested.
+* Use only AI tools whose data-use level permits the intended input and output under [DIR-001](directives/DIR-001-ai-model-data-and-usage-policy.md).
+* Follow the universal deliverable-code requirements in [DIR-002](directives/DIR-002-code-generation-customer-deliverables.md).
+* Use module/component qualification under [DIR-003](directives/DIR-003-ai-code-generation-module-qualification.md) for developer-in-the-loop AI code generation.
+* Require reproducible regression testing that meaningfully exercises the affected behavior. Permit non-per-build cadence where justified by the sub-IPT and where fault detection remains manageable.
+* Require engineers submitting AI-generated deliverable code to complete the mandatory training identified at `<ai_training_list_url>` within the defined completion windows.
+* Keep human engineers responsible for understanding, reviewing, maintaining, and debugging AI-generated code and its relevant system interactions.
+* Protect reviewability through cohesive change scope, SLOC limits, and reviewer authority to require decomposition.
+* Permit AI to help create test infrastructure, while requiring an independent source of expected behavior before AI-generated tests are relied upon as the verification baseline for AI-generated functionality.
+* Allow only temporary, time-bounded exceptions where adequate regression infrastructure does not yet exist. Exceptions require a remediation plan and approval by the responsible sub-IPT lead and an outside SME.
+* Require the responsible sub-IPT lead and an outside SME to approve new interfaces or materially new capabilities that lack an established independent verification basis.
+* Require AI-altered source files to carry the file-level provenance header defined by DIR-002.
+* Treat approval of tools, interfaces, modules, and higher-autonomy capabilities as separate decisions.
+* Govern higher-autonomy or agentic software-development capabilities under [DIR-004](directives/DIR-004-higher-autonomy-agentic-ai-development.md).
 
 ## Operating model
 
 The following statements are planning assumptions. They are not active instructions while this plan remains in `DRAFT`:
 
-1. Teams identify and sandbox proposed code-generation use cases with AI tools whose data-use level permits the sandbox activity.
-2. Teams keep sandbox output out of customer-deliverable branches and customer deliveries until the applicable approval requirements are satisfied.
-3. For normal adoption, teams submit the proposed bounded use case, its boundaries, its repeatable workflow, and correctness evidence under DIR-003.
-4. The responsible sub-IPT lead sponsors the proposal and confirms that it is appropriate for the team's product and codebase.
-5. A small IPT-level SME board reviews the sponsored proposal for boundaries, evidence, and acceptable AI use.
-6. Bounded use-case approval applies only to the reviewed use case and its stated boundaries, with tool portability and reapproval conditions as defined in DIR-003.
-7. Teams seeking broader authority may instead request repository/module-level approval under DIR-004 after demonstrating mature automated regression, coverage, static analysis, enforceable quality gates, and the required evidence period.
-8. Repository/module-level approval removes the need for separate use-case approval only within its explicitly approved repositories, modules, tools, and other recorded boundaries.
-9. Human engineers and the sub-IPT retain responsibility for detailed design, implementation, testing, normal code review, and all additional review requirements regardless of approval path.
+1. The company determines which AI tools may receive company IP and which outputs may enter deliverables under DIR-001.
+2. Teams identify the software modules or components in which they want developer-in-the-loop AI code-generation authority.
+3. The responsible sub-IPT lead sponsors the requested software scope.
+4. An IPT-level SME board evaluates whether the requested scope has an adequate independent verification and review environment under DIR-003.
+5. Once qualified, engineers may use approved developer-in-the-loop AI within the qualified boundary.
+6. Engineers remain responsible for generated changes and must satisfy applicable training, review, testing, and provenance requirements.
+7. Work that lacks adequate regression infrastructure may proceed only under a time-bounded exception with compensating controls and a plan to establish qualification capability.
+8. New interfaces or materially new capabilities without an established independent verification basis receive additional approval from the responsible sub-IPT lead and an outside SME.
+9. Higher-autonomy or agentic capabilities require separate approval under DIR-004 even when the software module is already qualified.
 
 ## Implementation plan
 
 ### Phase 1
 
-Define the bounded-use proposal, sandbox, sponsorship, review, evidence, approval, and recording process. Confirm sub-IPT sponsorship responsibility and assign the review group and its authority before treating any proposed use case as authorized for customer-deliverable source code.
+Finalize the module/component qualification criteria, required training reference, file-level AI provenance convention, review-size policy, approval register, and temporary-exception process.
 
 ### Phase 2
 
-Teams sandbox bounded use cases, obtain sub-IPT lead sponsorship, and submit correctness evidence for program review. Approved use cases enter the normal engineering workflow.
-
-In parallel, define the measurable entry requirements for higher-assurance repository/module approval, including minimum coverage expectations and changed-code coverage requirements.
+Qualify initial modules and components using representative sub-IPTs. Capture how regression cadence, reviewability, and exception handling operate across different embedded and non-embedded software environments.
 
 ### Phase 3
 
-Allow qualified teams to seek repository/module-level approval under DIR-004 after demonstrating the required automated controls and evidence. Review approvals when their scope or control environment changes and retire approvals that no longer match the work being performed.
-
-## Active work
-
-* Review and approval of this adoption strategy.
-* Assignment of plan ownership and approval authority.
-* Definition of sub-IPT sponsorship responsibilities, the IPT-level SME board, the submission process, and correctness criteria.
-* Definition of the authoritative approval register and reapproval triggers.
-* Definition of minimum coverage thresholds and changed-code coverage expectations for higher-assurance approval.
-* Validation of the initial AI-generated Merge Request size limits using program evidence.
-* Definition of quantitative suspension or revocation criteria as evidence becomes available.
+Use program evidence to adjust review-size limits, verification expectations, and reevaluation triggers. Pilot higher-autonomy capabilities only through DIR-004 after the developer-in-the-loop model is operating effectively.
 
 ## Risks
 
-* Sensitive context may be copied from private discussions into this public repository.
-* Draft material may be mistaken for approved direction if metadata is incomplete.
+* AI can produce code faster than humans can meaningfully review it, causing review to become superficial or unmanageable.
+* Engineers, particularly less-experienced engineers, may overdevelop prompt/tool skills while underdeveloping core software-engineering, debugging, and design expertise.
+* Heavy AI usage may reduce engineer understanding of system behavior, architecture, interfaces, and downstream effects.
 * Generated code may pass narrow tests without fitting repository-wide behavior, architecture, or conventions.
-* Sandbox output may be merged or delivered before its applicable approval requirements are satisfied.
-* Approval of one bounded use case may be mistaken for approval of unrelated uses.
-* Repository/module-level approval may be incorrectly treated as authority outside its approved repositories, modules, tools, or quality-control boundaries.
-* Automated quality gates may provide false confidence if their coverage, thresholds, or enforcement are weak.
-* Reviewers may apply subjective approval criteria inconsistently across teams.
+* AI-generated implementation and AI-generated tests may reproduce the same misunderstanding and create false confidence if treated as independent evidence.
+* Regression cadence may be too slow to associate introduced faults with the responsible change, especially in constrained embedded environments.
+* Temporary regression exceptions may become de facto permanent approval if expiration and remediation are not enforced.
+* Approved module boundaries may be interpreted too broadly.
+* Tool approval may be mistaken for approval of new interfaces or autonomous capabilities.
+* Automated quality gates may provide false confidence if their scope or enforcement is weak.
+* Inconsistent interpretation of reviewability or "materially new capability" may produce uneven implementation across teams.
 
 ## Dependencies
 
 * Named plan owner and approval authority: TBD.
-* Sub-IPT sponsorship roles and the membership and authority of the IPT-level SME board: TBD.
-* A documented path for proposing, reviewing, approving, and revisiting bounded use cases: TBD.
-* A documented path for higher-assurance repository/module approval: [DIR-004](directives/DIR-004-full-ai-code-generation-approval.md).
-* Verification methods appropriate to each use case and repository.
-* Minimum coverage thresholds for higher-assurance approval: TBD.
-* Changed-code coverage requirements for higher-assurance approval: TBD.
-* An authoritative register for approved AI tools, use cases, repositories, and modules: TBD.
+* Membership and authority of the IPT-level SME board: TBD.
+* Authoritative approved-tool, approved-interface, and module-qualification records: TBD.
+* Replace `<ai_training_list_url>` with the authoritative internal training-list URL.
+* Exact AI-altered file-header convention: TBD.
+* Default AI-generated Merge Request SLOC limit: TBD.
+* Maximum default duration for temporary regression exceptions: TBD.
+* Definition of a new interface or materially new capability: TBD.
 
 ## Open questions
 
-* Who owns this plan?
-* Who selects the IPT-level SME board members, and what approval authority do they hold?
-* What minimum correctness evidence is required before a bounded use case can be approved?
-* What minimum code-coverage threshold is required for repository/module-level approval?
-* Should newly modified or AI-generated code have a separate changed-code coverage threshold?
-* What quantitative conditions should trigger suspension or revocation of repository/module-level approval?
-* What changes to a bounded use case require a new review?
-* Where will approved tools, use cases, repositories, and modules be recorded?
-* How should teams identify AI-generated lines after human modification?
+* Who owns this plan and who has final approval authority?
+* What is the authoritative source for approved AI interfaces and interaction modes?
+* What exact file-level header identifies an AI-altered source file, and what is its lifecycle?
+* What default review-size limit should apply to AI-generated changes?
+* Should the single added-SLOC review limit include test code as well as production code?
+* What maximum duration should apply to a temporary regression exception?
+* What exact boundary defines a "new interface" or "materially new capability"?
+* What review cadence and suspension/reapproval triggers should apply to qualified modules?
+* Should dedicated AI-specific reviewer training become mandatory if such training is developed?
 
 ## Related decisions
 
@@ -128,5 +121,5 @@ None.
 
 * [DIR-001: AI tool data and output usage](directives/DIR-001-ai-model-data-and-usage-policy.md)
 * [DIR-002: Code generation for customer deliverables](directives/DIR-002-code-generation-customer-deliverables.md)
-* [DIR-003: Program-level AI code-generation use-case approval](directives/DIR-003-program-level-ai-use-case-approval.md)
-* [DIR-004: Full AI code-generation approval](directives/DIR-004-full-ai-code-generation-approval.md)
+* [DIR-003: AI-assisted code-generation module qualification](directives/DIR-003-ai-code-generation-module-qualification.md)
+* [DIR-004: Higher-autonomy and agentic AI development](directives/DIR-004-higher-autonomy-agentic-ai-development.md)

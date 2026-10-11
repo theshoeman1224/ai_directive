@@ -44,7 +44,7 @@ Output may be incorporated into deliverable products when all other applicable p
 
 * <level_1>
 
-Use of AI-generated source code remains subject to the code-generation requirements defined by DIR-002 and DIR-003.
+Use of AI-generated source code remains subject to the code-generation requirements defined by DIR-002 and the module/component qualification requirements defined by DIR-003.
 
 ### Level 2 — Internal-use only
 
@@ -75,7 +75,7 @@ Subject to the input restrictions of the selected data-use level, Level 2 and Le
 * Researching algorithms, libraries, tools, or engineering approaches.
 * Brainstorming designs or alternative implementations.
 * Troubleshooting errors and developing debugging approaches.
-* Developing prompts, workflows, or AI use-case proofs of concept.
+* Developing prompts, workflows, or AI proofs of concept.
 * Developing or configuring CI and internal scripts that will not enter a customer-deliverable baseline or be released to customers.
 
 For Level 2 tools, company IP may be included as input. For Level 3 tools, all inputs must remain free of company IP.
@@ -101,12 +101,14 @@ A Level 1 tool is needed when the task requires permissions unavailable at the o
 
 Approval of a tool, or its treatment as Level 3 by default, does not exempt users from other requirements. Program, contractual, security, export-control, data-handling, and engineering requirements all still apply.
 
+Approval of an AI tool also does not automatically approve every interface, interaction mode, CLI, or agentic capability associated with that tool.
+
 Users must:
 
 * determine the required data-use level before selecting an AI tool,
 * provide company IP only to tools approved to receive it,
 * prevent Level 2 and Level 3 outputs from entering deliverable products, and
-* comply with any additional use-case approval requirements applicable to the work.
+* comply with applicable module/component qualification, training, interaction-mode, and engineering requirements for deliverable work.
 
 ## Exceptions
 
@@ -118,12 +120,12 @@ Compliance requires that:
 
 * the tool's data-use level permits the data provided to it,
 * the intended use of the output is permitted by the tool's assigned level, and
-* any additional program-level approval required for the activity has been obtained.
+* any additional program-level qualification or approval required for the activity has been obtained.
 
 ## Related directives
 
 * [DIR-002: Code generation for customer deliverables](DIR-002-code-generation-customer-deliverables.md)
-* [DIR-003: Program-level AI code-generation use-case approval](DIR-003-program-level-ai-use-case-approval.md)
+* [DIR-003: AI-assisted code-generation module qualification](DIR-003-ai-code-generation-module-qualification.md)
 
 ## Related communications
 
