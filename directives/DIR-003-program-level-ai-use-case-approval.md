@@ -38,6 +38,7 @@ AI-assisted development under this directive follows these principles:
 * Automated testing is an important control but does not independently establish correctness.
 * AI-generated tests may improve verification, but AI-generated implementation and AI-generated tests must not be treated as independent evidence of one another.
 * Changes must remain sufficiently bounded and reviewable for a human reviewer to understand their behavior and system impact.
+* AI may accelerate implementation, but it must not replace the engineering judgment or system knowledge required to understand, verify, maintain, and debug the resulting software.
 * Existing safety, security, mission-critical, architectural, contractual, qualification, and release requirements continue to apply.
 
 ## Scope
@@ -60,7 +61,7 @@ Required training must cover at least:
 
 * AI limitations and common failure modes, including hallucination, incomplete context, and plausible but incorrect code;
 * applicable AI-tool, data-use, IP, security, and deliverable restrictions; and
-* AI-assisted software-engineering responsibilities, including context selection, verification, testing, and human code review.
+* AI-assisted software-engineering responsibilities, including context selection, verification, testing, human code review, and preservation of system understanding.
 
 Training completion establishes user eligibility only. It does not independently authorize a tool, interaction mode, repository, module, component, or otherwise restricted activity.
 
@@ -157,15 +158,29 @@ Reviewers must evaluate the implementation, not merely confirm that automated ch
 
 AI may assist with code review or test generation, but AI assistance does not replace required human review or independently established verification.
 
+## Engineering competency and system understanding
+
+AI assistance must supplement, not replace, the software-engineering competency needed to design, understand, verify, maintain, and debug the affected software.
+
+Engineers submitting AI-generated changes must understand the implementation sufficiently to explain its relevant logic, assumptions, failure behavior, and interactions with affected software.
+
+AI assistance does not remove responsibility to understand relevant system behavior, architectural boundaries, interfaces, and downstream effects. A locally correct change is not acceptable if its broader system impact has not been adequately understood and reviewed.
+
+Teams and technical leads must avoid patterns of AI usage that materially erode the development or exercise of core software-engineering skills, particularly when mentoring or developing less-experienced engineers.
+
+This directive does not prescribe different AI permissions solely by seniority. The same requirement to understand and defend submitted work applies to all engineers.
+
 ## Change size and reviewability
 
-AI-generated changes must remain sufficiently small and cohesive for meaningful human review.
+AI-generated changes must remain sufficiently small and cohesive for meaningful human review. AI-generated code must not be produced or submitted at a rate or scope that prevents meaningful human comprehension and review.
+
+Meaningful review requires more than confirming that automated checks pass. Reviewers must have a reasonable opportunity to understand the generated logic, assumptions, failure behavior, relevant system interactions, and expected impact of the change.
 
 Numeric Source Lines of Code (SLOC) limits are reviewability controls, not proof that a change is low risk. A small change with broad architectural, interface, timing, concurrency, safety, or security impact may require greater scrutiny than a larger repetitive change.
 
 Deleted production code should be evaluated separately from added production code because legitimate refactoring may remove substantial legacy code without creating equivalent generated-code review burden.
 
-An AI-assisted Merge Request must represent a single cohesive engineering purpose.
+An AI-assisted Merge Request must represent a single cohesive engineering purpose. Reviewers or technical leads may require decomposition of a change even when it is below the numeric SLOC limit if its architectural breadth, behavioral complexity, or review burden prevents meaningful review.
 
 **TODO: Establish the default AI-generated Merge Request size limits. A candidate initial value is no more than 500 added production SLOC and 2,000 deleted production SLOC, consistent with the current DIR-004 draft. Determine whether test code and generated artifacts are excluded and define the exception path for larger changes.**
 
