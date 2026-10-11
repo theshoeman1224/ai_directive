@@ -236,7 +236,7 @@ Routine prompt changes and ordinary team-selected tasks within the approved boun
 
 ## Relationship to DIR-004
 
-[DIR-004](DIR-004-full-ai-code-generation-approval.md) is reserved for future higher-autonomy or agentic software-development capabilities.
+[DIR-004](DIR-004-higher-autonomy-agentic-ai-development.md) is reserved for future higher-autonomy or agentic software-development capabilities.
 
 Normal developer-in-the-loop module qualification is governed by this directive. DIR-004 must not create a second competing module-qualification path.
 
@@ -264,7 +264,7 @@ Normal developer-in-the-loop AI code generation for customer-deliverable source 
 
 * [DIR-001: AI tool data and output usage](DIR-001-ai-model-data-and-usage-policy.md)
 * [DIR-002: Code generation for customer deliverables](DIR-002-code-generation-customer-deliverables.md)
-* [DIR-004: Higher-autonomy and agentic AI development](DIR-004-full-ai-code-generation-approval.md)
+* [DIR-004: Higher-autonomy and agentic AI development](DIR-004-higher-autonomy-agentic-ai-development.md)
 
 ## Related communications
 
