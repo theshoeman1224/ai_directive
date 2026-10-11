@@ -75,7 +75,9 @@ Describe how the team will keep AI-generated changes sufficiently cohesive and l
 
 ## Training
 
-Describe how the team will ensure engineers submitting AI-generated deliverable code have completed required training.
+Required Training List: `<ai_training_list_url>`
+
+Describe how the team will ensure engineers submitting AI-generated deliverable code have completed all training required by the authoritative training list within its stated completion windows.
 
 `<training_verification>`
 
