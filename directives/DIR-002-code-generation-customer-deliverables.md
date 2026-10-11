@@ -48,10 +48,6 @@ This directive applies to AI-generated source code intended for release or deliv
 
 Every source file altered using AI-generated code must include a file-level header indicating that AI was used to alter the file.
 
-The purpose of this header is to provide durable provenance without requiring the AI tool or developers to maintain line-level AI tags.
-
-Line-by-line `-AI` tagging is not required.
-
 The file-level header must remain compatible with the file's language and existing header conventions and must not obscure required copyright, classification, licensing, change-history, or other mandated header content.
 
 **TODO: Define the exact standard header wording, placement, and rules for files that already contain controlled or standardized headers. Define whether the header remains permanently once AI has altered a file or may later be removed under an approved condition.**
@@ -60,13 +56,13 @@ Human reviewers must verify that affected files contain the required AI-alterati
 
 ## Safety-critical and specialized software
 
-AI-generated source code intended for safety-critical or otherwise specially controlled applications remains subject to all previously applicable standards and team-defined review requirements.
+AI-generated source code intended for safety-critical or otherwise specially controlled applications remains subject to all applicable standards and team-defined review requirements.
 
-DIR-002 and qualification under DIR-003 are additional controls, not replacements for existing safety, security, mission, architecture, qualification, or release requirements.
+Qualification under DIR-003 is an additional control and does not replace existing safety, security, mission, architecture, qualification, or release requirements.
 
 ## Exceptions
 
-None currently exist except where DIR-003 explicitly defines a temporary regression exception or additional approval path.
+Exceptions are governed by DIR-003 and any applicable engineering or program exception process.
 
 ## Verification and compliance
 
