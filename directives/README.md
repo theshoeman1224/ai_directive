@@ -25,8 +25,15 @@ The following directives are drafts. They are under review and impose no require
 
 * [DIR-001: AI tool data and output usage](DIR-001-ai-model-data-and-usage-policy.md)
 * [DIR-002: Code generation for customer deliverables](DIR-002-code-generation-customer-deliverables.md)
-* [DIR-003: Program-level AI code-generation use-case approval](DIR-003-program-level-ai-use-case-approval.md)
-* [DIR-004: Full AI code-generation approval](DIR-004-full-ai-code-generation-approval.md)
+* [DIR-003: AI-assisted code-generation module qualification](DIR-003-ai-code-generation-module-qualification.md)
+* [DIR-004: Higher-autonomy and agentic AI development](DIR-004-full-ai-code-generation-approval.md)
+
+The intended separation of authority is:
+
+* DIR-001 governs AI-tool data and output eligibility.
+* DIR-002 governs universal requirements for AI-generated customer-deliverable source code.
+* DIR-003 governs normal developer-in-the-loop module/component qualification, training, verification, and reviewability.
+* DIR-004 governs additional approval for higher-autonomy or agentic software-development capabilities.
 
 When a directive is retired, add `Retired By`, `Retirement Date`, and a short `Retirement Rationale`. Use `TBD` for any unknown fact rather than inventing lifecycle history.
 
