@@ -19,6 +19,8 @@ Real directives use monotonically increasing IDs: `DIR-001`, `DIR-002`, and so o
 
 An assistant must not infer `APPROVED` or `ACTIVE`. Those states require verified approval and effective-date information.
 
+Before a directive has been approved or issued, keep the file focused on the current proposed state. Git and pull-request history preserve earlier draft wording; do not create redirect files, superseded draft copies, or supersession metadata solely to preserve pre-release history.
+
 ## Current records
 
 The following directives are drafts. They are under review and impose no requirements:
@@ -35,10 +37,10 @@ The intended separation of authority is:
 * DIR-003 governs developer-in-the-loop module/component qualification, training, verification, and reviewability.
 * DIR-004 governs additional approval for higher-autonomy or agentic software-development capabilities.
 
-When a directive is retired, add `Retired By`, `Retirement Date`, and a short `Retirement Rationale`. Use `TBD` for any unknown fact rather than inventing lifecycle history.
+When an issued directive is retired, add `Retired By`, `Retirement Date`, and a short `Retirement Rationale`. Use `TBD` for any unknown fact rather than inventing lifecycle history.
 
 ## Supersession
 
-Retain superseded directives after they have been issued. Mark the old record `SUPERSEDED`, fill in `Superseded By`, and name it under `Supersedes` in the replacement. Preserve its original purpose and instructions except for lifecycle metadata and links needed to show the relationship.
+Retain superseded directives after they have been approved or issued. Mark the old record `SUPERSEDED`, fill in `Superseded By`, and name it under `Supersedes` in the replacement. Preserve its original purpose and instructions except for lifecycle metadata and links needed to show the relationship.
 
 [EXAMPLE-directive.md](EXAMPLE-directive.md) is fictional, not active, and imposes no requirements.

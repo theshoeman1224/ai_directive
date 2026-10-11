@@ -12,10 +12,6 @@ Effective Date: TBD
 
 Review Date: TBD
 
-Supersedes: None
-
-Superseded By: None
-
 Related Decisions:
 
 * [DEC-000 example](../decisions/EXAMPLE-decision.md)
