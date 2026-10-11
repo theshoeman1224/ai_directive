@@ -21,21 +21,23 @@ An assistant must not infer `APPROVED` or `ACTIVE`. Those states require verifie
 
 Before a directive has been approved or issued, keep the file focused on the current proposed state. Git and pull-request history preserve earlier draft wording; do not create redirect files, superseded draft copies, or supersession metadata solely to preserve pre-release history.
 
-## Current records
+## Initial release drafts
 
-The following directives are drafts. They are under review and impose no requirements:
+The following directives are drafts and impose no requirements:
 
 * [DIR-001: AI tool data and output usage](DIR-001-ai-model-data-and-usage-policy.md)
 * [DIR-002: Code generation for customer deliverables](DIR-002-code-generation-customer-deliverables.md)
 * [DIR-003: AI-assisted code-generation module qualification](DIR-003-ai-code-generation-module-qualification.md)
-* [DIR-004: Higher-autonomy and agentic AI development](DIR-004-higher-autonomy-agentic-ai-development.md)
 
-The intended separation of authority is:
+Their intended separation of authority is:
 
 * DIR-001 governs AI-tool data and output eligibility.
 * DIR-002 governs universal requirements for AI-generated customer-deliverable source code.
 * DIR-003 governs developer-in-the-loop module/component qualification, training, verification, and reviewability.
-* DIR-004 governs additional approval for higher-autonomy or agentic software-development capabilities.
+
+## Deferred drafts
+
+* [DIR-004: Higher-autonomy and agentic AI development](DIR-004-DEFERRED-higher-autonomy-agentic-ai-development.md) — Deferred from the initial release and grants no permission.
 
 When an issued directive is retired, add `Retired By`, `Retirement Date`, and a short `Retirement Rationale`. Use `TBD` for any unknown fact rather than inventing lifecycle history.
 

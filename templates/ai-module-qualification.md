@@ -77,7 +77,7 @@ Describe how the team will keep AI-generated changes sufficiently cohesive and l
 
 Required Training List: `<ai_training_list_url>`
 
-Describe how the team will ensure engineers submitting AI-generated deliverable code have completed all training required by the authoritative training list within its stated completion windows.
+Describe how the team will ensure engineers submitting AI-generated deliverable code have completed all required training within the stated completion windows.
 
 `<training_verification>`
 
@@ -113,9 +113,9 @@ Sub-IPT Lead Decision: `<approved_or_not_approved>`
 
 Outside SME Decision: `<approved_or_not_approved>`
 
-## New interface / materially new capability
+## New or materially changed interface
 
-Complete this section only when the proposed AI-generated work creates a new interface or materially new capability without an established independent verification basis.
+Complete this section only when a new interface or material change to an existing interface lacks an established independent verification baseline.
 
 Additional Approval Required: `<yes_or_no>`
 
