@@ -12,10 +12,6 @@ Effective Date: TBD
 
 Review Date: TBD
 
-Supersedes: None
-
-Superseded By: None
-
 Related Decisions:
 
 <!-- Replace TBD with Markdown links to each related decision. -->
