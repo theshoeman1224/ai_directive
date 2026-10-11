@@ -58,7 +58,9 @@ For meaningful changes, use a branch, commit, pull request, review, and merge. [
 
 Decision IDs use `DEC-001`, `DEC-002`, and so on. Directive IDs use `DIR-001`, `DIR-002`, and so on. Choose the next number after the highest ID already present, never reuse or renumber an ID, and resolve duplicate IDs across branches during pull-request review. Files prefixed `EXAMPLE-` use `DEC-000` or `DIR-000`; those examples do not allocate a real ID.
 
-Superseded records remain in place. Use `Superseded` for a decision or `SUPERSEDED` for a directive, fill in `Superseded By`, and set `Supersedes` in the replacement. Preserve the original rationale and update only lifecycle metadata and links needed to describe the new relationship.
+Before a directive or decision is approved or issued, its file should represent only the current proposed state. Git and pull-request history preserve earlier draft wording; do not retain obsolete draft text, redirect files, or supersession metadata solely for pre-release history.
+
+Once a directive or decision has been approved or issued, preserve it if it is later superseded or retired. Use `Superseded` for a decision or `SUPERSEDED` for a directive, fill in `Superseded By`, and set `Supersedes` in the replacement. Preserve the original rationale and update only lifecycle metadata and links needed to describe the new relationship.
 
 ## Final communications
 
@@ -66,7 +68,7 @@ The communications directory holds one canonical, final approved version of each
 
 ## AI assistants
 
-AI assistants must read [AGENTS.md](AGENTS.md) before substantial work. They must treat prompts and conversations as working context, inspect relevant existing records, sanitize content before writing, preserve historical IDs and rationale, and leave unknown approval facts as `TBD`. An assistant may draft a record but may not infer that it is approved or active.
+AI assistants must read [AGENTS.md](AGENTS.md) before substantial work. They must treat prompts and conversations as working context, inspect relevant existing records, sanitize content before writing, preserve issued IDs and rationale, and leave unknown approval facts as `TBD`. An assistant may draft a record but may not infer that it is approved or active.
 
 ## Link validation
 
