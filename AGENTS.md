@@ -17,7 +17,7 @@ Then inspect the decisions and directives relevant to the requested change. Sear
 
 Chat conversations, meetings, brainstorming, and temporary notes are working context. Repository content on the primary branch is the durable record.
 
-Treat `notes/` as non-authoritative. A discussion does not become approved policy by being recorded. Do not silently reinterpret an approved decision or directive. When current intent conflicts with an existing approved record, preserve the old record and create or update the proper replacement and lifecycle links.
+Treat `notes/` as non-authoritative. A discussion does not become approved policy by being recorded. Do not silently reinterpret an approved decision or directive. When current intent conflicts with an existing approved record, preserve the issued record and create or update the proper replacement and lifecycle links.
 
 ## Public-data boundary
 
@@ -83,15 +83,18 @@ The placeholder should tell a private author what to insert later without exposi
 
 ## Historical integrity
 
-* Preserve every existing `DEC` and `DIR` ID.
-* Never reuse or renumber an allocated ID.
-* Retain superseded records.
-* Update both `Superseded By` and `Supersedes` relationships.
-* Preserve meaningful rationale instead of rewriting history to match the current position.
-* Maintain links among plans, decisions, directives, communications, issues, and pull requests.
-* Resolve duplicate IDs introduced by concurrent branches before merge.
+Before a directive or decision has been approved or issued, keep only the current proposed state in the working document. Git and pull-request history preserve draft evolution; do not create redirect files, superseded draft copies, or narrative history inside a current draft solely to document earlier proposals.
 
-Do not delete an old decision or directive because it is no longer active.
+Once a decision or directive has been approved, activated, issued, superseded, or retired:
+
+* preserve its allocated ID;
+* do not reuse or renumber the ID;
+* retain the issued record when it is later superseded or retired;
+* update both `Superseded By` and `Supersedes` relationships when supersession actually occurs;
+* preserve meaningful rationale and lifecycle metadata; and
+* maintain links among plans, decisions, directives, communications, issues, and pull requests.
+
+Resolve duplicate IDs introduced by concurrent branches before merge.
 
 ## Approval integrity
 
@@ -107,7 +110,7 @@ When asked to modify a plan:
 2. Search existing decisions and directives before creating a new one.
 3. Keep each fact in one authoritative place and link to it elsewhere.
 4. Sanitize content before writing.
-5. Preserve IDs, rationale, lifecycle metadata, and related links.
+5. Preserve issued IDs, rationale, lifecycle metadata, and related links.
 6. Leave every unknown field as `TBD` or a descriptive placeholder.
 7. Check that draft material cannot be mistaken for an active instruction.
 8. Run link validation when links or Markdown files change.
@@ -143,5 +146,6 @@ Before reporting work complete, confirm that:
 * approval and activity states match verified facts,
 * no example or draft can be mistaken for an active directive,
 * current-state and related links reflect the change,
-* historical records remain available,
+* issued historical records remain available,
+* unissued drafts contain current-state content rather than obsolete draft history, and
 * changed links pass the repository check or have a documented narrow exclusion.
